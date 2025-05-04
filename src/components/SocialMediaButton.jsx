@@ -1,8 +1,8 @@
-import { IconButton } from '@mui/material';
+import { IconButton, Tooltip } from '@mui/material';
 import React from 'react';
 import { LIGHTNING } from '../config/colors';
 
-function SocialMediaButton({ href, children }) {
+function SocialMediaButton({ href, children, titleText, side="left" }) {
     return(
         <IconButton
             component="a"
@@ -11,7 +11,9 @@ function SocialMediaButton({ href, children }) {
             rel="noopener noreferrer"
             sx={{ color: LIGHTNING }}
         >
+            <Tooltip title={titleText} placement={side === "left" ? "left" : "right"}>
                 {children}
+            </Tooltip>
         </IconButton>
     )
 }
