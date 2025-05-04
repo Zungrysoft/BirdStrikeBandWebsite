@@ -6,3 +6,5 @@ export const BACKGROUND_3 = '#39414d';
 export const BACKGROUND_4 = '#556074';
 export const TEXT = '#7f838b';
 export const LINK_TEXT = '#bebdb2';
+
+export const LIGHTNING = "#f0f8c1";
