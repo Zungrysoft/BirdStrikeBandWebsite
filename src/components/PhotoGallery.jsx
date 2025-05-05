@@ -1,5 +1,5 @@
 import { useMediaQuery, useTheme } from "@mui/material";
-import { useState } from "react";
+import { useCallback, useState } from "react";
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
 
@@ -14,7 +14,7 @@ function getImage(str) {
     }
 }
 
-function ProjectGallery({ images }) {
+function PhotoGallery({ images }) {
     const theme = useTheme();
     const isCompact = useMediaQuery(theme.breakpoints.down('sm'));
     const [isHovered, setIsHovered] = useState(false);
@@ -24,7 +24,7 @@ function ProjectGallery({ images }) {
             original: getImage(x),
             thumbnail: getImage(x),
         }
-    ))
+    ));
 
     return(
         <div onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
@@ -43,4 +43,4 @@ function ProjectGallery({ images }) {
     )
 }
 
-export default ProjectGallery;
+export default PhotoGallery;

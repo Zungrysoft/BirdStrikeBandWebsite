@@ -5,6 +5,7 @@ import { Box, Stack, useMediaQuery, useTheme } from '@mui/material';
 import Header from './components/Header.jsx';
 import MembersPage from './pages/MembersPage.jsx';
 import HeaderCompact from './components/HeaderCompact.jsx';
+import AboutPage from './pages/AboutPage.jsx';
 
 const images = require.context('../public/images', true);
 
@@ -27,7 +28,8 @@ function Main() {
                     <HeaderCompact tab={selectedPage} onChangeTab={handleTabChange}/> :
                     <Header tab={selectedPage} onChangeTab={handleTabChange}/>
                 }
-                <MembersPage/>
+                {selectedPage === 0 && <AboutPage/>}
+                {selectedPage === 2 && <MembersPage/>}
             </Box>
             {!isCompact && <Box sx={{ position: 'sticky', top: 0, height: '100vh', flex: 0 }}>
                 <img src={images("./posterslice2.png")} style={{ height: '100vh' }}/>

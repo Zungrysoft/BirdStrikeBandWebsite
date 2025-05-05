@@ -15,7 +15,7 @@ function MembersPage() {
                 description="Alex's Description Here"
                 date="May 2024 - Current"
                 imageSide="right"
-                image=""
+                image="profile_alex"
             />
             <Profile
                 name="Tom Cannon"
@@ -39,7 +39,7 @@ function MembersPage() {
                 description="Alan's Description Here"
                 date="January 2024 - Current"
                 imageSide="left"
-                image=""
+                image="profile_alan"
             />
             <Profile
                 name="Abdul Hannan Kanji"

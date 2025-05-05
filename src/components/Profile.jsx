@@ -3,8 +3,6 @@ import ProfileImage from "./ProfileImage";
 import { BACKGROUND_1 } from "../config/colors";
 import ProfileContent from "./ProfileContent";
 
-const images = require.context('../../public/images', true);
-
 function Profile({
     name,
     instrument,
@@ -18,6 +16,8 @@ function Profile({
     const theme = useTheme();
     const isCompact = useMediaQuery(theme.breakpoints.down('sm'));
 
+    const absImageSide = isCompact ? "right" : imageSide;
+
     return(
         <Box sx={{
             display: 'flex',
@@ -28,7 +28,7 @@ function Profile({
             marginRight: '16px',
             height: '100%',
         }}>
-            {image && imageSide === "left" &&
+            {image && absImageSide === "left" &&
                 <Box sx={{ flex: 0.7, minWidth: 0, maxWidth: '100%' }}>
                     <ProfileImage image={image}/>
                 </Box>
@@ -43,7 +43,7 @@ function Profile({
                     links={links}
                 />
             </Box>
-            {image && imageSide === "right" &&
+            {image && absImageSide === "right" &&
                 <Box sx={{ flex: 0.7, minWidth: 0, maxWidth: '100%' }}>
                     <ProfileImage image={image}/>
                 </Box>
