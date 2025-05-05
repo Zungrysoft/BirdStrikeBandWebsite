@@ -1,0 +1,35 @@
+import React,{useCallback, useState} from 'react';
+import './App.css';
+
+import { Box, Stack, useMediaQuery, useTheme } from '@mui/material';
+import Header from './components/Header.jsx';
+import MembersPage from './pages/MembersPage.jsx';
+
+const images = require.context('../public/images', true);
+
+function Main() {
+    const theme = useTheme();
+    const isCompact = useMediaQuery(theme.breakpoints.down('sm'));
+    const [selectedPage, setSelectedPage] = useState(0);
+
+    const handleTabChange = useCallback((_, value) => {
+        setSelectedPage(value)
+    }, [setSelectedPage]);
+
+    return (
+        <Stack direction="row" sx={{ height: '100vh', width: '100vw', overflowY: 'auto', overflowX: 'clip' }}>
+            {!isCompact && <Box sx={{ position: 'sticky', top: 0, height: '100vh', flex: 0 }}>
+                <img src={images("./posterslice1.png")} style={{ height: '100vh' }}/>
+            </Box>}
+            <Box sx={{ width: '100%', flex: 1, minWidth: 0 }}>
+                <Header tab={selectedPage} onChangeTab={handleTabChange}/>
+                <MembersPage/>
+            </Box>
+            {!isCompact && <Box sx={{ position: 'sticky', top: 0, height: '100vh', flex: 0 }}>
+                <img src={images("./posterslice2.png")} style={{ height: '100vh' }}/>
+            </Box>}
+        </Stack>
+    );
+}
+
+export default Main;

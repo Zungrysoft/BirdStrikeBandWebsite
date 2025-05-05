@@ -41,7 +41,7 @@ option:disabled{
 }
 
 p {
-    font-size: 18px;
+    font-size: 16px;
     white-space: pre-line;
     margin: 0px;
 }
@@ -67,6 +67,13 @@ h2 {
 
 h4 {
     font-size: 26px;
+    text-align: center;
+    color: #a2a1a7;
+    margin: 0px;
+}
+
+h6 {
+    font-size: 16px;
     text-align: center;
     color: #a2a1a7;
     margin: 0px;

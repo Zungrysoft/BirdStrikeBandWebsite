@@ -8,3 +8,4 @@ export const TEXT = '#7f838b';
 export const LINK_TEXT = '#bebdb2';
 
 export const LIGHTNING = "#f0f8c1";
+export const LIGHTNING2 = "#b2ba80";

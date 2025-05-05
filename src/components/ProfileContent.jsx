@@ -1,21 +1,24 @@
 import { Box, useMediaQuery, useTheme } from "@mui/material";
 import { useEscherDownloads } from "../context/EscherDownloadsContext";
+import { LIGHTNING, LIGHTNING2 } from "../config/colors";
 
-function ProjectContent({ project }) {
+function ProfileContent({
+    name,
+    instrument,
+    title,
+    date,
+    description,
+    links=[],
+}) {
     const theme = useTheme();
     const isCompact = useMediaQuery(theme.breakpoints.down('sm'));
-    const  { escherDownloads } = useEscherDownloads();
-
-    let projectDescription = project.description;
-    if (projectDescription.includes('**escher_downloads**')) {
-        projectDescription = projectDescription.replaceAll("**escher_downloads**", escherDownloads);
-    }
 
     return(
         <>
             <Box sx={{ flex: 0, padding: 2 }}>
-                <h4 style={{ marginBottom: '16px' }}>{project.title}</h4>
-                <p>{projectDescription}</p>
+                <h4 style={{ color: LIGHTNING }}>{name}</h4>
+                <h6 style={{ color: LIGHTNING2, marginBottom: '16px' }}>{instrument}</h6>
+                <p style={{ color: LIGHTNING2 }}>{description}</p>
             </Box>
             <Box sx={{
                 flex: 1,
@@ -25,7 +28,7 @@ function ProjectContent({ project }) {
                 minHeight: '16px',
                 position: 'relative',
             }}>
-                {project.links ? project.links.map((link, index) =>
+                {links ? links.map((link, index) =>
                     <div key={index}>
                         <a target="blank" rel="noopener noreferrer" href={link.url}>{link.text}</a>
                     </div>
@@ -34,11 +37,12 @@ function ProjectContent({ project }) {
                     position: 'absolute',
                     bottom: '8px',
                     right: '16px',
+                    color: LIGHTNING2,
                     fontStyle: 'italic',
-                }}>{project.dateDisplay}</p>
+                }}>{date}</p>
             </Box>
         </>
     )
 }
 
-export default ProjectContent;
+export default ProfileContent;

@@ -12,8 +12,8 @@ const images = require.context('../../public/images', true);
 
 function Header({ tab, onChangeTab }) {
     return(
-        <Box sx={{ flex: 1, minWidth: 0, color: LIGHTNING, position: 'relative' }}>
-            <Stack direction="row" justifyContent="center" sx={{ padding: 2, height: '200px' }}>
+        <Box sx={{ color: LIGHTNING, position: 'relative', width: '100%' }}>
+            <Stack direction="row" justifyContent="center" sx={{ padding: 2 }}>
                 <Stack direction="column" justifyContent="space-evenly" alignItems="center" sx={{ padding: 3 }}>
                     <SocialMediaButton
                         href="https://www.instagram.com/birdstrike.band/"
@@ -28,7 +28,15 @@ function Header({ tab, onChangeTab }) {
                         <YouTubeIcon sx={{ fontSize: 50 }} />
                     </SocialMediaButton>
                 </Stack>
-                <img src={images("./logo.png")} style={{ flex: 0, height: '100%' }}/>
+                <Box>
+                    <img src={images("./logo.png")} style={{
+                        height: '100%',
+                        maxHeight: '200px',
+                        maxWidth: '100%',
+                        display: 'block',
+                        objectFit: 'contain',
+                    }}/>
+                </Box>
                 <Stack direction="column" justifyContent="space-evenly" alignItems="center" sx={{ padding: 3 }}>
                     <SocialMediaButton
                         href="https://open.spotify.com/artist/2LUg9x87S4NoaASrjvDWMY?si=CdX8ZsARRkSQ1BGZS8ugMw"
