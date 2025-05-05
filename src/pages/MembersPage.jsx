@@ -12,7 +12,7 @@ function MembersPage() {
             <Profile
                 name="Alex Martinez"
                 instrument="Lead Vocals"
-                description="Alex's Description Here"
+                description=""
                 date="May 2024 - Current"
                 imageSide="right"
                 image="profile_alex"
@@ -20,7 +20,7 @@ function MembersPage() {
             <Profile
                 name="Tom Cannon"
                 instrument="Guitar"
-                description="Tom's Description Here"
+                description=""
                 date="January 2024 - Current"
                 imageSide="left"
                 image="profile_tom"
@@ -28,7 +28,7 @@ function MembersPage() {
             <Profile
                 name="Calvin Martinez"
                 instrument="Keyboard, Harmonica, Backing Vocals"
-                description="Calvin has spent the last five years perfecting his overdriven Hammond B3 sound to create his own alternative to the rhythm guitar. "
+                description=""
                 date="January 2024 - Current"
                 imageSide="right"
                 image="profile_calvin"
@@ -36,7 +36,7 @@ function MembersPage() {
             <Profile
                 name="Alan Brilliant"
                 instrument="Bass Guitar"
-                description="Alan's Description Here"
+                description=""
                 date="January 2024 - Current"
                 imageSide="left"
                 image="profile_alan"
@@ -44,10 +44,10 @@ function MembersPage() {
             <Profile
                 name="Abdul Hannan Kanji"
                 instrument="Drums"
-                description="Hannan's Description Here"
+                description=""
                 date="June 2024 - Current"
                 imageSide="right"
-                image=""
+                image="profile_hannan"
             />
             <Box sx={{ height: '1px' }}/>
         </Box>

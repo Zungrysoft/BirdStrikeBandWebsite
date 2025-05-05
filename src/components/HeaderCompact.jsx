@@ -35,7 +35,7 @@ function HeaderCompact({ tab, onChangeTab }) {
                     centered
                 >
                     <Tab label="About"/>
-                    <Tab label="Music"/>
+                    <Tab label="Gallery"/>
                     <Tab label="Members"/>
                 </Tabs>
             </Box>

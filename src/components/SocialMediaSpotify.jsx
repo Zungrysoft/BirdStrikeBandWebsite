@@ -2,15 +2,16 @@ import React from 'react';
 import { ReactComponent as SpotifyIcon } from '../svg/spotify.svg';
 import SocialMediaButton from './SocialMediaButton';
 import { SvgIcon } from '@mui/material';
+import { URL_SPOTIFY } from '../helpers/socialMedia';
 
-function SocialMediaSpotify({ tooltipPlacement }) {
+function SocialMediaSpotify({ tooltipPlacement, size=50 }) {
     return(
         <SocialMediaButton
-            href="https://open.spotify.com/artist/2LUg9x87S4NoaASrjvDWMY?si=CdX8ZsARRkSQ1BGZS8ugMw"
+            href={URL_SPOTIFY}
             tooltipText="Spotify"
             tooltipPlacement={tooltipPlacement}
         >
-            <SvgIcon component={SpotifyIcon} sx={{ fontSize: 50 }} viewBox="0 0 64 64" />
+            <SvgIcon component={SpotifyIcon} sx={{ fontSize: size }} viewBox="0 0 64 64" />
         </SocialMediaButton>
     )
 }

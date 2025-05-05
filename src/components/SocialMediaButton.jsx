@@ -7,8 +7,6 @@ function SocialMediaButton({ href, children, tooltipText, tooltipPlacement }) {
         <IconButton
             component="a"
             href={href}
-            target="_blank"
-            rel="noopener noreferrer"
             sx={{ color: LIGHTNING }}
         >
             <Tooltip title={tooltipPlacement ? tooltipText : undefined} placement={tooltipPlacement}>

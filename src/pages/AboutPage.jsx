@@ -1,77 +1,66 @@
-import { Box, ImageList, ImageListItem, useMediaQuery, useTheme } from "@mui/material";
+import { Box, ImageList, ImageListItem, Link, Stack, useMediaQuery, useTheme } from "@mui/material";
 import ParagraphBox from "../components/ParagraphBox";
-import { useEffect, useState } from "react";
+import { BACKGROUND_1, LIGHTNING, LIGHTNING2 } from "../config/colors";
+import SocialMediaInstagram from "../components/SocialMediaInstagram";
+import SocialMediaAppleMusic from "../components/SocialMediaAppleMusic";
+import SocialMediaSpotify from "../components/SocialMediaSpotify";
+import SocialMediaYouTube from "../components/SocialMediaYouTube";
+import { URL_APPLE_MUSIC, URL_INSTAGRAM, URL_SPOTIFY, URL_YOUTUBE } from "../helpers/socialMedia";
 
 const images = require.context('../../public/images', true);
 
-const ABOUT_TEXT = "Bird Strike is a hard rock and punk band from Sunnyvale, California. This website is under construction.";
+const ABOUT_TEXT = "We've already hit your windshield, now we're hitting your speakers. Out of the depths of the Sunnyvale Projects, Bird Strike is here to distribute hard rock and punk to the masses.";
 
-const GALLERY_IMAGES = [
-    "slide_group_war_machine.jpg",
-    "slide_garage_tom.jpg",
-    "slide_garage_alex.jpg",
-    "slide_blood_on_the_bass.jpg",
-    "slide_war_machine_tom.jpg",
-    "slide_calvin_war_machine.jpg",
-    "slide_skate_1.jpg",
-    "slide_skate_2.jpg",
-    "slide_gilman_alex.jpg",
-    "slide_i_drink_your_milkshake.jpg",
-    "slide_caravan_1.jpg",
-    "slide_botb_1.jpg",
-    "slide_botb_alan.jpg",
-    "slide_botb_calvin.jpg",
-    "slide_botb_tom.jpg",
-];
-
-function shuffleArray(array) {
-    for (var i = array.length - 1; i > 0; i--) {
-        var j = Math.floor(Math.random() * (i + 1));
-        var temp = array[i];
-        array[i] = array[j];
-        array[j] = temp;
-    }
-}
+const UPCOMING_SHOWS = [
+    {
+        title: "Art Boutiki"
+    },
+]
 
 function AboutPage() {
     const theme = useTheme();
     const isCompact = useMediaQuery(theme.breakpoints.down('sm'));
-    const isModeratelyCompact = useMediaQuery(theme.breakpoints.down('md'))
-    const isSomewhatCompact = useMediaQuery(theme.breakpoints.down('lg'))
-    const [galleryImages, setGalleryImages] = useState([]);
-
-    useEffect(() => {
-        let shuffledGalleryImages = [...GALLERY_IMAGES];
-        shuffleArray(shuffledGalleryImages);
-        setGalleryImages(shuffledGalleryImages);
-    }, []);
-
-    let numCols = 5;
-    if (isCompact) {
-        numCols = 2;
-    }
-    else if (isModeratelyCompact) {
-        numCols = 3;
-    }
-    else if (isSomewhatCompact) {
-        numCols = 4;
-    }
 
     return(
-        <Box sx={{ justifySelf: 'center', width: 'min(100%, 1600px)', minHeight: '101vh' }}>
+        <Box sx={{ justifySelf: 'center', width: 'min(100%, 1600px)', minHeight: isCompact ? null : '101vh' }}>
             <ParagraphBox text={ABOUT_TEXT}/>
-            <Box sx={{ marginLeft: '16px', marginRight: '16px', marginBottom: '16px' }}>
-                <ImageList variant="masonry" cols={numCols} gap={16}>
-                    {galleryImages.map((img) => (
-                        <ImageListItem key={img}>
-                            <img
-                                src={images(`./${img}`)}
-                                loading="lazy"
-                            />
-                        </ImageListItem>
-                    ))}
-                </ImageList>
+            <Box sx={{
+                marginLeft: '16px',
+                marginRight: '16px',
+                marginBottom: '16px',
+            }}>
+                <img src={images(isCompact ? './main_page_cropped.jpg' : './main_page.jpg')} style={{
+                    width: '100%',
+                    display: 'block',
+                    objectFit: 'contain',
+                }}/>
             </Box>
+            <Stack direction={isCompact ? 'column-reverse' : 'row'} spacing={2} sx={{ marginLeft: '16px', marginRight: '16px', marginBottom: '16px' }}>
+                <Box sx={{ flex: 1, padding: 1.5, backgroundColor: BACKGROUND_1 }}>
+                    <h6 style={{ color: LIGHTNING, textAlign: 'left', marginBottom: '16px' }}>Links</h6>
+                    <Box sx={{ fontSize: 16, color: LIGHTNING2 }}>
+                        <Stack direction='row' alignItems='center'>
+                            <SocialMediaInstagram size={20}/>
+                            <Link href={URL_INSTAGRAM}>Instagram</Link>
+                        </Stack>
+                        <Stack direction='row' alignItems='center'>
+                            <SocialMediaYouTube size={20}/>
+                            <Link href={URL_YOUTUBE}>YouTube</Link>
+                        </Stack>
+                        <Stack direction='row' alignItems='center'>
+                            <SocialMediaSpotify size={20}/>
+                            <Link href={URL_SPOTIFY}>Spotify</Link>
+                        </Stack>
+                        <Stack direction='row' alignItems='center'>
+                            <SocialMediaAppleMusic size={20}/>
+                            <Link href={URL_APPLE_MUSIC}>Apple Music</Link>
+                        </Stack>
+                    </Box>
+                </Box>
+                <Box sx={{ flex: 1, padding: 1.5, backgroundColor: BACKGROUND_1}}>
+                    <h6 style={{ color: LIGHTNING, textAlign: 'left' }}>Upcoming Show Dates</h6>
+                </Box>
+            </Stack>
             <Box sx={{ height: '1px' }}/>
         </Box>
     )
