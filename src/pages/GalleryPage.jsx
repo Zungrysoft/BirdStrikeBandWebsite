@@ -16,6 +16,8 @@ const GALLERY_IMAGES = [
     "slide_i_drink_your_milkshake.jpg",
     "slide_caravan_1.jpg",
     "slide_botb_1.jpg",
+    "slide_botb_2.jpg",
+    "slide_botb_3.jpg",
     "slide_botb_alan.jpg",
     "slide_botb_calvin.jpg",
     "slide_botb_tom.jpg",
