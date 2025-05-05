@@ -28,7 +28,7 @@ function MembersPage() {
             <Profile
                 name="Calvin Martinez"
                 instrument="Keyboard, Harmonica, Backing Vocals"
-                description="Calvin has been spending the last five years perfecting his overdriven Hammond B3 sound to create his own alternative to the rhythm guitar. "
+                description="Calvin has spent the last five years perfecting his overdriven Hammond B3 sound to create his own alternative to the rhythm guitar. "
                 date="January 2024 - Current"
                 imageSide="right"
                 image="profile_calvin"
