@@ -58,7 +58,7 @@ function AboutPage() {
     }
 
     return(
-        <Box sx={{ justifySelf: 'center', width: 'min(100%, 1600px)' }}>
+        <Box sx={{ justifySelf: 'center', width: 'min(100%, 1600px)', minHeight: '101vh' }}>
             <ParagraphBox text={ABOUT_TEXT}/>
             <Box sx={{ marginLeft: '16px', marginRight: '16px', marginBottom: '16px' }}>
                 <ImageList variant="masonry" cols={numCols} gap={16}>

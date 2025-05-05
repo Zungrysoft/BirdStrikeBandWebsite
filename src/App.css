@@ -1,15 +1,15 @@
 .App-header {
-  min-height: 100vh;
-  display: flex;
-  align-items: left;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-  overflow-x: 'clip';
+    min-height: 100vh;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    overflow-x: 'clip';
 }
 
 .App-link {
-  color: #61dafb;
+    color: #61dafb;
 }
 
 .icon-button {
