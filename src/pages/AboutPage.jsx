@@ -6,16 +6,11 @@ import SocialMediaAppleMusic from "../components/SocialMediaAppleMusic";
 import SocialMediaSpotify from "../components/SocialMediaSpotify";
 import SocialMediaYouTube from "../components/SocialMediaYouTube";
 import { URL_APPLE_MUSIC, URL_INSTAGRAM, URL_SPOTIFY, URL_YOUTUBE } from "../helpers/socialMedia";
+import UpcomingShows from "../components/UpcomingShows";
 
 const images = require.context('../../public/images', true);
 
 const ABOUT_TEXT = "We've already hit your windshield, now we're hitting your speakers. Out of the depths of the Sunnyvale Projects, Bird Strike is here to distribute hard rock and punk to the masses.";
-
-const UPCOMING_SHOWS = [
-    {
-        title: "Art Boutiki"
-    },
-]
 
 function AboutPage() {
     const theme = useTheme();
@@ -57,8 +52,9 @@ function AboutPage() {
                         </Stack>
                     </Box>
                 </Box>
-                <Box sx={{ flex: 1, padding: 1.5, backgroundColor: BACKGROUND_1}}>
-                    <h6 style={{ color: LIGHTNING, textAlign: 'left' }}>Upcoming Show Dates</h6>
+                <Box sx={{ flex: 1, padding: 1.5, backgroundColor: BACKGROUND_1 }}>
+                    <h6 style={{ color: LIGHTNING, textAlign: 'left', marginBottom: '16px' }}>Upcoming Shows</h6>
+                    <UpcomingShows/>
                 </Box>
             </Stack>
             <Box sx={{ height: '1px' }}/>
