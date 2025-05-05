@@ -1,12 +1,11 @@
 import React from 'react';
 import { Box, Stack, Tab, Tabs } from '@mui/material';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import YouTubeIcon from '@mui/icons-material/YouTube';
-import { SvgIcon } from '@mui/material';
-import { ReactComponent as SpotifyIcon } from '../svg/spotify.svg';
-import { ReactComponent as AppleMusicIcon } from '../svg/apple_music.svg';
-import SocialMediaButton from './SocialMediaButton';
+
 import { LIGHTNING } from '../config/colors';
+import SocialMediaSpotify from './SocialMediaSpotify';
+import SocialMediaAppleMusic from './SocialMediaAppleMusic';
+import SocialMediaYouTube from './SocialMediaYouTube';
+import SocialMediaInstagram from './SocialMediaInstagram';
 
 const images = require.context('../../public/images', true);
 
@@ -15,18 +14,8 @@ function Header({ tab, onChangeTab }) {
         <Box sx={{ color: LIGHTNING, position: 'relative', width: '100%' }}>
             <Stack direction="row" justifyContent="center" sx={{ padding: 2 }}>
                 <Stack direction="column" justifyContent="space-evenly" alignItems="center" sx={{ padding: 3 }}>
-                    <SocialMediaButton
-                        href="https://www.instagram.com/birdstrike.band/"
-                        titleText="Instagram"
-                    >
-                        <InstagramIcon sx={{ fontSize: 50 }} />
-                    </SocialMediaButton>
-                    <SocialMediaButton
-                        href="https://www.youtube.com/@BirdStrike-Music"
-                        titleText="YouTube"
-                    >
-                        <YouTubeIcon sx={{ fontSize: 50 }} />
-                    </SocialMediaButton>
+                    <SocialMediaInstagram tooltipPlacement='left'/>
+                    <SocialMediaYouTube tooltipPlacement='left'/>
                 </Stack>
                 <Box>
                     <img src={images("./logo.png")} style={{
@@ -38,20 +27,8 @@ function Header({ tab, onChangeTab }) {
                     }}/>
                 </Box>
                 <Stack direction="column" justifyContent="space-evenly" alignItems="center" sx={{ padding: 3 }}>
-                    <SocialMediaButton
-                        href="https://open.spotify.com/artist/2LUg9x87S4NoaASrjvDWMY?si=CdX8ZsARRkSQ1BGZS8ugMw"
-                        titleText="Spotify"
-                        side="right"
-                    >
-                        <SvgIcon component={SpotifyIcon} sx={{ fontSize: 50 }} viewBox="0 0 64 64" />
-                    </SocialMediaButton>
-                    <SocialMediaButton
-                        href="https://music.apple.com/us/artist/bird-strike/1800520296"
-                        titleText="Apple Music"
-                        side="right"
-                    >
-                        <SvgIcon component={AppleMusicIcon} sx={{ fontSize: 50 }} viewBox="0 0 50 50"/>
-                    </SocialMediaButton>
+                    <SocialMediaSpotify tooltipPlacement='right'/>
+                    <SocialMediaAppleMusic tooltipPlacement='right'/>
                 </Stack>
             </Stack>
             <Box sx={{ position: 'absolute', left: '50%', transform: 'translate(-50%, -60px)' }}>

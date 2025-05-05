@@ -1,6 +1,6 @@
-# Zungrysoft Entertainment Website
+# Bird Strike Band Website
 
-This is my portfolio website. It is hosted here: https://zungrysoft.github.io/
+This is the official website for the band Bird Strike. It is hosted here: https://birdstrikeband.com/
 
 ## To run website
 
