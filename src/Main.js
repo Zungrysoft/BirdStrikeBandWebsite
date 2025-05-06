@@ -22,7 +22,7 @@ function Main() {
     return (
         <Stack direction="row" sx={{ height: '100vh', width: '100vw', overflowY: 'auto', overflowX: 'clip' }}>
             {!isCompact && <Box sx={{ position: 'sticky', top: 0, height: '100vh', flex: 0 }}>
-                <img src={images("./posterslice1.png")} style={{ height: '100vh' }}/>
+                <img src={images("./posterslice1.jpg")} style={{ height: '100vh' }}/>
             </Box>}
             <Box sx={{ width: '100%', flex: 1, minWidth: 0 }}>
                 {isCompact ?
@@ -34,7 +34,7 @@ function Main() {
                 {selectedPage === 2 && <MembersPage/>}
             </Box>
             {!isCompact && <Box sx={{ position: 'sticky', top: 0, height: '100vh', flex: 0 }}>
-                <img src={images("./posterslice2.png")} style={{ height: '100vh' }}/>
+                <img src={images("./posterslice2.jpg")} style={{ height: '100vh' }}/>
             </Box>}
         </Stack>
     );
