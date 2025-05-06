@@ -13,8 +13,10 @@ const GALLERY_IMAGES = [
     "slide_skate_1.jpg",
     "slide_skate_2.jpg",
     "slide_gilman_alex.jpg",
+    "slide_gilman_1.jpg",
     "slide_i_drink_your_milkshake.jpg",
     "slide_caravan_1.jpg",
+    "slide_caravan_2.jpg",
     "slide_botb_1.jpg",
     "slide_botb_2.jpg",
     "slide_botb_3.jpg",
@@ -59,7 +61,7 @@ function GalleryPage() {
     }
 
     return(
-        <Box sx={{ justifySelf: 'center', width: 'min(100%, 1600px)', minHeight: isCompact ? null : '101vh' }}>
+        <Box sx={{ margin: 'auto', width: 'min(100%, 1600px)', minHeight: isCompact ? null : '101vh' }}>
             <Box sx={{ marginLeft: '16px', marginRight: '16px', marginBottom: '16px' }}>
                 <ImageList variant="masonry" cols={numCols} gap={16}>
                     {galleryImages.map((img) => (

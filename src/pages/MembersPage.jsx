@@ -8,7 +8,7 @@ function MembersPage() {
     const isCompact = useMediaQuery(theme.breakpoints.down('sm'));
 
     return(
-        <Box sx={{ justifySelf: 'center', width: 'min(100%, 1600px)' }}>
+        <Box sx={{ margin: 'auto', width: 'min(100%, 1600px)' }}>
             <Profile
                 name="Alex Martinez"
                 instrument="Lead Vocals"
