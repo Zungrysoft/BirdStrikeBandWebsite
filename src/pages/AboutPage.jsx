@@ -1,4 +1,6 @@
-import { Box, ImageList, ImageListItem, Link, Stack, useMediaQuery, useTheme } from "@mui/material";
+import { Box, Checkbox, FormControl, FormControlLabel, InputLabel, Link, MenuItem, Select, Stack, Tab, Tabs, useMediaQuery, useTheme } from "@mui/material";
+import CheckBoxOutlineBlankIcon from '@mui/icons-material/CheckBoxOutlineBlank';
+import CheckBoxIcon from '@mui/icons-material/CheckBox';
 import ParagraphBox from "../components/ParagraphBox";
 import { BACKGROUND_1, LIGHTNING, LIGHTNING2 } from "../config/colors";
 import SocialMediaInstagram from "../components/SocialMediaInstagram";
@@ -7,6 +9,7 @@ import SocialMediaSpotify from "../components/SocialMediaSpotify";
 import SocialMediaYouTube from "../components/SocialMediaYouTube";
 import { URL_APPLE_MUSIC, URL_INSTAGRAM, URL_SPOTIFY, URL_YOUTUBE } from "../helpers/socialMedia";
 import UpcomingShows from "../components/UpcomingShows";
+import { useCallback, useState } from "react";
 
 const images = require.context('../../public/images', true);
 
@@ -15,6 +18,11 @@ const ABOUT_TEXT = "We've already hit your windshield, now we're hitting your sp
 function AboutPage() {
     const theme = useTheme();
     const isCompact = useMediaQuery(theme.breakpoints.down('sm'));
+    const [displayPastShows, setDisplayPastShows] = useState(false);
+
+    const handleDisplayPastShowsChange = useCallback((_, value) => {
+        setDisplayPastShows(value);
+    }, [setDisplayPastShows]);
 
     return(
         <Box sx={{ margin: 'auto', width: 'min(100%, 1600px)', minHeight: isCompact ? null : '101vh' }}>
@@ -53,8 +61,25 @@ function AboutPage() {
                     </Box>
                 </Box>
                 <Box sx={{ flex: 1, padding: 1.5, backgroundColor: BACKGROUND_1 }}>
-                    <h6 style={{ color: LIGHTNING, textAlign: 'left', marginBottom: '16px' }}>Upcoming Shows</h6>
-                    <UpcomingShows/>
+                    <Stack direction="row" justifyContent="space-between">
+                        <h6 style={{ color: LIGHTNING, textAlign: 'left', marginBottom: '16px' }}>Shows</h6>
+                        <FormControlLabel
+                        sx={{ m: 0 }}
+                        control={
+                            <Checkbox
+                                disableRipple
+                                icon={
+                                    <CheckBoxOutlineBlankIcon sx={{ fontSize: 22, color: LIGHTNING2 }} />
+                                }
+                                checkedIcon={<CheckBoxIcon sx={{ fontSize: 22, color: LIGHTNING2, }} />}
+                                onChange={handleDisplayPastShowsChange}
+                                sx={{ p: 0 }}
+                            />
+                        }
+                        label={<p style={{ fontSize: '12px', color: LIGHTNING2 }}>Past Shows</p>}
+                        />
+                    </Stack>
+                    <UpcomingShows displayPastShows={displayPastShows}/>
                 </Box>
             </Stack>
             <Box sx={{ height: '1px' }}/>

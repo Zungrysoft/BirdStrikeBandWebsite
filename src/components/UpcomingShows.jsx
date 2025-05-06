@@ -44,7 +44,7 @@ function UpcomingShows({ displayPastShows=false }) {
         return UPCOMING_SHOWS
             .filter((show) => displayPastShows || now.getTime() - show.date.getTime() < ESTIMATED_SHOW_LENGTH)
             .sort((a, b) => a.date < b.date);
-    }, [])
+    }, [displayPastShows])
 
     return shows.length === 0 ? 
         <p style={{ color: LIGHTNING2 }}>No shows planned right now. Check back later!</p> :
