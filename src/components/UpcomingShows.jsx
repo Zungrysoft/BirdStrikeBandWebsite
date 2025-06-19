@@ -12,7 +12,7 @@ const UPCOMING_SHOWS = [
         price: 0,
     },
     {
-        title: "Bird Strike, The Emergency Broadcast System, and The Hello Hellos",
+        title: "Bird Strike, The Emergency Broadcast System, The Hello Hellos",
         venue: "The Caravan Lounge, San Jose",
         date: new Date("August 16, 2024 10:00"),
         price: 0,
@@ -24,7 +24,7 @@ const UPCOMING_SHOWS = [
         price: 0,
     },
     {
-        title: "Bird Strike and Sonus",
+        title: "Bird Strike, Sonus",
         venue: "The Caravan Lounge, San Jose",
         date: new Date("February 28, 2025 10:00"),
         price: 0,
