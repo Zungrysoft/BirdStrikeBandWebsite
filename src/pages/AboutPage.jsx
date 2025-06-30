@@ -13,7 +13,7 @@ import { useCallback, useState } from "react";
 
 const images = require.context('../../public/images', true);
 
-const ABOUT_TEXT = "We've already hit your windshield, now we're hitting your speakers. Out of the depths of the Sunnyvale Projects, Bird Strike is here to distribute hard rock and punk to the masses.";
+const ABOUT_TEXT = "We've already hit your windshield, now we're hitting your speakers! Out of the depths of the Sunnyvale Projects, Bird Strike is here to distribute rock and roll to the masses. Our sound is made of a unique and ecclectic mix of hard rock, punk, blues, and prog. Come see us live in the Bay Area!";
 
 function AboutPage() {
     const theme = useTheme();
@@ -35,11 +35,7 @@ function AboutPage() {
                 marginRight: '16px',
                 marginBottom: '16px',
             }}>
-                <img src={images(isCompact ? './main_page_cropped.jpg' : './main_page.jpg')} style={{
-                    width: '100%',
-                    display: 'block',
-                    objectFit: 'contain',
-                }}/>
+                <iframe width="100%" height="500px" src="https://www.youtube.com/embed/videoseries?list=PLemJ8ub8qlnEIYQsCzNdPfpYjlogzURWN&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="true"></iframe>
             </Box>
             <Stack direction={isCompact ? 'column-reverse' : 'row'} spacing={2} sx={{ marginLeft: '16px', marginRight: '16px', marginBottom: '16px' }}>
                 <Box sx={{ flex: 1, flexGrow: 0, flexBasis: '196px', padding: 1.5, backgroundColor: BACKGROUND_1 }}>
