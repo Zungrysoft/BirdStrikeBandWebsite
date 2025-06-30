@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/static/css/main.322f6f84.css",
-    "main.js": "/static/js/main.0396c949.js",
+    "main.js": "/static/js/main.1696a959.js",
     "static/js/453.14ec568e.chunk.js": "/static/js/453.14ec568e.chunk.js",
     "static/media/slide_garage_1.jpg": "/static/media/slide_garage_1.32b1070b6f3fb2199514.jpg",
-    "static/media/slide_group_war_machine.jpg": "/static/media/slide_group_war_machine.a54620ab2bf0eefcf389.jpg",
+    "static/media/slide_group_war_machine.jpg": "/static/media/slide_group_war_machine.a63d0db03ea4d05775ef.jpg",
     "static/media/profile_tom.jpg": "/static/media/profile_tom.1b62a7e72bfb3f5970fd.jpg",
     "static/media/profile_calvin.jpg": "/static/media/profile_calvin.a79e132a33a938cc2868.jpg",
     "static/media/slide_war_machine_tom.jpg": "/static/media/slide_war_machine_tom.5b73a17bcbd36ec5b38f.jpg",
@@ -15,7 +15,7 @@
     "static/media/slide_botb_2.jpg": "/static/media/slide_botb_2.9157089dfbf553d5ac42.jpg",
     "static/media/profile_alex.jpg": "/static/media/profile_alex.71a41785ea0997fc4387.jpg",
     "static/media/profile_hannan.jpg": "/static/media/profile_hannan.36be1724c0b4cfb6e84b.jpg",
-    "static/media/slide_calvin_war_machine.jpg": "/static/media/slide_calvin_war_machine.a74fce32c3fae8d1e34d.jpg",
+    "static/media/slide_war_machine_calvin.jpg": "/static/media/slide_war_machine_calvin.a74fce32c3fae8d1e34d.jpg",
     "static/media/slide_garage_tom.jpg": "/static/media/slide_garage_tom.4d9370b4863011643f5b.jpg",
     "static/media/logo.png": "/static/media/logo.e3cf9c634e8cb8a0d247.png",
     "static/media/slide_skate_1.jpg": "/static/media/slide_skate_1.2408703e39efcd05c9f5.jpg",
@@ -28,6 +28,7 @@
     "static/media/slide_botb_1.jpg": "/static/media/slide_botb_1.6d8cd55d18cf39f19db6.jpg",
     "static/media/main_page_cropped.jpg": "/static/media/main_page_cropped.e7fe27319c68d8b9c68d.jpg",
     "static/media/slide_skate_2.jpg": "/static/media/slide_skate_2.051a66cdf1bf483d5843.jpg",
+    "static/media/slide_jury_room_1.jpg": "/static/media/slide_jury_room_1.798bebf6c3c669053afc.jpg",
     "static/media/slide_gilman_alex.jpg": "/static/media/slide_gilman_alex.2ede3f8a852d4691d180.jpg",
     "static/media/slide_botb_alan.jpg": "/static/media/slide_botb_alan.f5ed357769595557c3b8.jpg",
     "static/media/slide_caravan_1.jpg": "/static/media/slide_caravan_1.acc76fdb8c1ca93d9234.jpg",
@@ -38,11 +39,11 @@
     "static/media/apple_music.svg": "/static/media/apple_music.244afe3dcde974ef5a470cbebd997ba1.svg",
     "index.html": "/index.html",
     "main.322f6f84.css.map": "/static/css/main.322f6f84.css.map",
-    "main.0396c949.js.map": "/static/js/main.0396c949.js.map",
+    "main.1696a959.js.map": "/static/js/main.1696a959.js.map",
     "453.14ec568e.chunk.js.map": "/static/js/453.14ec568e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.322f6f84.css",
-    "static/js/main.0396c949.js"
+    "static/js/main.1696a959.js"
   ]
 }
