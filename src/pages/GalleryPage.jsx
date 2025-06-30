@@ -4,27 +4,28 @@ import { useLayoutEffect, useState } from "react";
 const images = require.context('../../public/images', true);
 
 const GALLERY_IMAGES = [
-    "slide_group_war_machine.jpg",
-    "slide_garage_tom.jpg",
-    "slide_garage_alex.jpg",
-    "slide_blood_on_the_bass.jpg",
-    "slide_war_machine_tom.jpg",
-    "slide_calvin_war_machine.jpg",
-    "slide_skate_1.jpg",
-    "slide_skate_2.jpg",
-    "slide_gilman_alex.jpg",
-    "slide_gilman_1.jpg",
-    "slide_i_drink_your_milkshake.jpg",
-    "slide_caravan_1.jpg",
-    "slide_caravan_2.jpg",
-    "slide_botb_1.jpg",
-    "slide_botb_2.jpg",
-    "slide_botb_3.jpg",
-    "slide_botb_alan.jpg",
-    "slide_botb_calvin.jpg",
-    "slide_botb_tom.jpg",
-    "slide_garage_hannan.jpg",
-    "slide_garage_1.jpg",
+    { "filename": "slide_group_war_machine.jpg", "size": [3828, 3024] },
+    { "filename": "slide_garage_tom.jpg", "size": [2610, 3702] },
+    { "filename": "slide_garage_alex.jpg", "size": [3024, 3894] },
+    { "filename": "slide_garage_hannan.jpg", "size": [2688, 3520] },
+    { "filename": "slide_garage_1.jpg", "size": [4044, 3464] },
+    { "filename": "slide_blood_on_the_bass.jpg", "size": [3000, 4000] },
+    { "filename": "slide_war_machine_tom.jpg", "size": [3803, 2771] },
+    { "filename": "slide_war_machine_calvin.jpg", "size": [4031, 3023] },
+    { "filename": "slide_skate_1.jpg", "size": [3188, 2368] },
+    { "filename": "slide_skate_2.jpg", "size": [1258, 1376] },
+    { "filename": "slide_gilman_alex.jpg", "size": [754, 982] },
+    { "filename": "slide_gilman_1.jpg", "size": [609, 614] },
+    { "filename": "slide_i_drink_your_milkshake.jpg", "size": [2232, 3550] },
+    { "filename": "slide_caravan_1.jpg", "size": [942, 605] },
+    { "filename": "slide_caravan_2.jpg", "size": [2896, 2532] },
+    { "filename": "slide_botb_1.jpg", "size": [1159, 1080] },
+    { "filename": "slide_botb_2.jpg", "size": [3162, 3526] },
+    { "filename": "slide_botb_3.jpg", "size": [2436, 3214] },
+    { "filename": "slide_botb_alan.jpg", "size": [689, 1017] },
+    { "filename": "slide_botb_calvin.jpg", "size": [738, 907] },
+    { "filename": "slide_botb_tom.jpg", "size": [660, 769] },
+    { "filename": "slide_jury_room_1.jpg", "size": [776, 1040] },
 ];
 
 function shuffleArray(array) {
@@ -64,11 +65,15 @@ function GalleryPage() {
         <Box sx={{ margin: 'auto', width: 'min(100%, 1600px)', minHeight: isCompact ? null : '101vh' }}>
             <Box sx={{ marginLeft: '16px', marginRight: '16px', marginBottom: '16px' }}>
                 <ImageList variant="masonry" cols={numCols} gap={16}>
-                    {galleryImages.map((img) => (
-                        <ImageListItem key={img}>
+                    {galleryImages.map((imgData) => (
+                        <ImageListItem key={imgData.filename}>
                             <img
-                                src={images(`./${img}`)}
+                                src={images(`./${imgData.filename}`)}
                                 loading="lazy"
+                                style={{
+                                    width: '100%',
+                                    aspectRatio: (imgData.size[0] / imgData.size[1]) ?? '3/2',
+                                }}
                             />
                         </ImageListItem>
                     ))}
