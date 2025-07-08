@@ -44,14 +44,14 @@ const UPCOMING_SHOWS = [
     {
         title: "The Sunnyvale War Machine II",
         venue: "DM for address",
-        date: new Date("July 19, 2025"),
+        date: new Date("July 19, 2025 18:00"),
         price: 0,
     },
     {
-        title: "Bird Strike, Paperface, TBD",
+        title: "Bird Strike, Paperface, Phantoms Forever, Citrus Pit",
         venue: "Stay Gold Deli, Oakland",
-        date: new Date("July 26, 2025"),
-        price: 'TBD',
+        date: new Date("July 26, 2025 18:00"),
+        price: 10,
     },
 ]
 
