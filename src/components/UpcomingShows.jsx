@@ -44,7 +44,7 @@ const UPCOMING_SHOWS = [
     {
         title: "The Sunnyvale War Machine II",
         venue: "DM for address",
-        date: new Date("July 19, 2025 18:00"),
+        date: new Date("July 19, 2025 19:00"),
         price: 0,
     },
     {
