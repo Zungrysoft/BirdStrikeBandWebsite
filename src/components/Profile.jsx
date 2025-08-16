@@ -12,11 +12,14 @@ function Profile({
     image,
     links=[],
     imageSide="left",
+    hidden,
 }) {
     const theme = useTheme();
     const isCompact = useMediaQuery(theme.breakpoints.down('sm'));
 
-    const absImageSide = isCompact ? "right" : imageSide;
+    if (hidden) {
+        return null;
+    }
 
     return(
         <Box sx={{
@@ -28,7 +31,7 @@ function Profile({
             marginRight: '16px',
             height: '100%',
         }}>
-            {image && absImageSide === "left" &&
+            {!isCompact && image && imageSide === "left" &&
                 <Box sx={{ flex: 0.7, minWidth: 0, maxWidth: '100%' }}>
                     <ProfileImage image={image}/>
                 </Box>
@@ -41,9 +44,10 @@ function Profile({
                     date={date}
                     description={description}
                     links={links}
+                    image={isCompact && image}
                 />
             </Box>
-            {image && absImageSide === "right" &&
+            {!isCompact && image && imageSide === "right" &&
                 <Box sx={{ flex: 0.7, minWidth: 0, maxWidth: '100%' }}>
                     <ProfileImage image={image}/>
                 </Box>

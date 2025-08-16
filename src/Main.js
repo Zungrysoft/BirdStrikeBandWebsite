@@ -13,6 +13,7 @@ const images = require.context('../public/images', true);
 function Main() {
     const theme = useTheme();
     const isCompact = useMediaQuery(theme.breakpoints.down('sm'));
+    const isLarge = useMediaQuery(theme.breakpoints.up('xxl'));
     const [selectedPage, setSelectedPage] = useState(0);
 
     const handleTabChange = useCallback((_, value) => {
@@ -22,7 +23,7 @@ function Main() {
     return (
         <Stack direction="row" sx={{ height: '100vh', width: '100vw', overflowY: 'auto', overflowX: 'clip' }}>
             {!isCompact && <Box sx={{ position: 'sticky', top: 0, height: '100vh', flex: 0 }}>
-                <img src={images("./posterslice1.jpg")} style={{ height: '100vh' }}/>
+                <img src={images(isLarge ? "./posterslice1big.jpg" : "./posterslice1.jpg")} style={{ height: '100vh' }}/>
             </Box>}
             <Box sx={{ width: '100%', flex: 1, minWidth: 0 }}>
                 {isCompact ?
@@ -34,7 +35,7 @@ function Main() {
                 {selectedPage === 2 && <MembersPage/>}
             </Box>
             {!isCompact && <Box sx={{ position: 'sticky', top: 0, height: '100vh', flex: 0 }}>
-                <img src={images("./posterslice2.jpg")} style={{ height: '100vh' }}/>
+                <img src={images(isLarge ? "./posterslice2big.jpg" : "./posterslice2.jpg")} style={{ height: '100vh' }}/>
             </Box>}
         </Stack>
     );

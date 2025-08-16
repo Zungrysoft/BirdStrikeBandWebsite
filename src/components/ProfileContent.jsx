@@ -1,6 +1,6 @@
 import { Box, useMediaQuery, useTheme } from "@mui/material";
-import { useEscherDownloads } from "../context/EscherDownloadsContext";
 import { LIGHTNING, LIGHTNING2 } from "../config/colors";
+import ProfileImage from "./ProfileImage";
 
 function ProfileContent({
     name,
@@ -9,15 +9,19 @@ function ProfileContent({
     date,
     description,
     links=[],
+    image,
 }) {
     const theme = useTheme();
     const isCompact = useMediaQuery(theme.breakpoints.down('sm'));
 
     return(
         <>
-            <Box sx={{ flex: 0, padding: 2 }}>
+            <Box sx={{ flex: 0, padding: 2, paddingBottom: isCompact ? 2 : 0 }}>
                 <h4 style={{ color: LIGHTNING }}>{name}</h4>
-                <h6 style={{ color: LIGHTNING2, marginBottom: '16px' }}>{instrument}</h6>
+                <h6 style={{ color: LIGHTNING2 }}>{instrument}</h6>
+            </Box>
+            {image && <ProfileImage image={image}/>}
+            <Box sx={{ flex: 0, padding: 2 }}>
                 <p style={{ color: LIGHTNING2 }}>{description}</p>
             </Box>
             <Box sx={{
@@ -30,7 +34,7 @@ function ProfileContent({
             }}>
                 {links ? links.map((link, index) =>
                     <div key={index}>
-                        <a target="blank" rel="noopener noreferrer" href={link.url}>{link.text}</a>
+                        <a target="blank" rel="noopener noreferrer" href={link.url} style={{ color: LIGHTNING, fontSize: 18 }}>{link.text}</a>
                     </div>
                 ):<div/>}
                 <p style={{

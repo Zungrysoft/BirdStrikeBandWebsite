@@ -28,7 +28,7 @@ function AboutPage() {
     );
 
     return(
-        <Box sx={{ margin: 'auto', width: 'min(100%, 1600px)', minHeight: isCompact ? null : '101vh' }}>
+        <Box sx={{ margin: 'auto', width: 'min(100%, 1600px)' }}>
             <ParagraphBox text={ABOUT_TEXT}/>
             <Box sx={{
                 marginLeft: '16px',
