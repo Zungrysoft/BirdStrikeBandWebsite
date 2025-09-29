@@ -1,6 +1,22 @@
 import { Box, useMediaQuery, useTheme } from "@mui/material";
 import { LIGHTNING, LIGHTNING2 } from "../config/colors";
 import ProfileImage from "./ProfileImage";
+import bandNames from '../data/bandNames.json';
+
+
+function getDayIndex(n) {
+  const today = new Date();
+  const utcMidnight = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate());
+  const daysSinceEpoch = Math.floor(utcMidnight / (1000 * 60 * 60 * 24));
+
+  return daysSinceEpoch % n;
+}
+
+
+function getTomBandName() {
+    return bandNames[getDayIndex(bandNames.length)];
+}
+
 
 function ProfileContent({
     name,
@@ -13,6 +29,7 @@ function ProfileContent({
 }) {
     const theme = useTheme();
     const isCompact = useMediaQuery(theme.breakpoints.down('sm'));
+    const processedDescription = description.replaceAll('*bandName*', getTomBandName());
 
     return(
         <>
@@ -22,7 +39,7 @@ function ProfileContent({
             </Box>
             {image && <ProfileImage image={image}/>}
             <Box sx={{ flex: 0, padding: 2 }}>
-                <p style={{ color: LIGHTNING2 }}>{description}</p>
+                <p style={{ color: LIGHTNING2 }}>{processedDescription}</p>
             </Box>
             <Box sx={{
                 flex: 1,
