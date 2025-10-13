@@ -77,7 +77,7 @@ function MembersPage() {
             <Profile
                 name="Tom Cannon"
                 instrument="Guitar"
-                description={`With his skilled guitar shredding and 80's rock style, Tom "Thundergun" Cannon seemed destined for fame and glory in the Bay Area music scene. As a founding member of Bird Strike (formerly known as *bandName*), he brought to every practice session some dirty licks, some clean solos, and just a little bit of workout stank.\n\nTom's rise to fame was cut short by his tragic death in August of 2025. For the sake of the family's privacy, the band wishes not to go into much detail, but they will say that it involved the Sinaloa Cartel, a Hattori Hanzo sword, and three slices of provolone cheese.`}
+                description={`With his skilled guitar shredding and 80's rock style, Tom "Thundergun" Cannon seemed destined for fame and glory in the Bay Area music scene. As a founding member of Bird Strike (formerly known as *bandName*), he brought to every practice session some dirty licks, some clean solos, and just a little bit of workout stank.\n\nTom's rise to fame was cut short by his tragic death in August of 2025. For the sake of the family's privacy, the band wishes not to go into much detail, but they will say that it involved *causeOfDeath*.`}
                 date="January 2024 - August 2025"
                 imageSide="left"
                 image="profile_tom"
