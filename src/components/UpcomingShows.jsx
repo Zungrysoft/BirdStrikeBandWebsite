@@ -61,6 +61,13 @@ const UPCOMING_SHOWS = [
         date: new Date("July 26, 2025 18:00"),
         price: 10,
     },
+    {
+        title: "",
+        bands: ["Chudson", "Silk Road", "Kaefan"],
+        venue: "The Yard (DM for address)",
+        date: new Date("October 30, 2025 19:00"),
+        price: 10,
+    },
 ]
 
 const DAYS = [
