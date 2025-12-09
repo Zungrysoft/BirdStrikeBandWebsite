@@ -1,49 +1,20 @@
 import { Box, useMediaQuery, useTheme } from "@mui/material";
 import { LIGHTNING, LIGHTNING2 } from "../config/colors";
 import ProfileImage from "./ProfileImage";
-import bandNames from '../data/bandNames.json';
-import causeOfDeathData from '../data/causesOfDeath.json';
-
-
-function getDayIndex(n) {
-  const today = new Date();
-  const utcMidnight = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate());
-  const daysSinceEpoch = Math.floor(utcMidnight / (1000 * 60 * 60 * 24));
-
-  return daysSinceEpoch % n;
-}
-
-function pickFromList(list) {
-    return list[getDayIndex(list.length)];
-}
-
-
-function getTomBandName() {
-    return pickFromList(bandNames);
-}
-
-
-function getCauseOfDeath() {
-    const party = pickFromList(causeOfDeathData.parties);
-    const thing1 = pickFromList(causeOfDeathData.things1);
-    const thing2 = pickFromList(causeOfDeathData.things2);
-
-    return `${party}, ${thing1}, and ${thing2}`
-}
-
+import { getTomBandName } from "../helpers/profileData";
 
 function ProfileContent({
     name,
     instrument,
-    title,
     date,
     description,
     links=[],
     image,
+    causeOfDeath,
 }) {
     const theme = useTheme();
     const isCompact = useMediaQuery(theme.breakpoints.down('sm'));
-    const processedDescription = description.replace('*bandName*', getTomBandName()).replace('*causeOfDeath*', getCauseOfDeath());
+    const processedDescription = description.replace('*bandName*', getTomBandName()).replace('*causeOfDeath*', causeOfDeath);
 
     return(
         <>

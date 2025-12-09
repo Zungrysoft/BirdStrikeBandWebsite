@@ -13,6 +13,7 @@ const GALLERY_IMAGES = [
     { "filename": "slide_gilman_alex.jpg", "size": [754, 982] },
     { "filename": "slide_war_machine_tom.jpg", "size": [3803, 2771] },
     { "filename": "slide_war_machine_calvin.jpg", "size": [4031, 3023] },
+    { "filename": "slide_war_machine_alex.jpg", "size": [2695, 2410] },
     { "filename": "slide_war_machine_group.jpg", "size": [3828, 3024] },
     { "filename": "slide_skate_1.jpg", "size": [3188, 2368] },
     { "filename": "slide_skate_2.jpg", "size": [1258, 1376] },
@@ -34,6 +35,12 @@ const GALLERY_IMAGES = [
     { "filename": "slide_war_machine_2_mosh_pit.jpg", "size": [1463, 1901] },
     { "filename": "slide_war_machine_2_worship.jpg", "size": [1883, 1280] },
     { "filename": "slide_war_machine_2_sermon.jpg", "size": [1256, 690] },
+    { "filename": "slide_yard_1.jpg", "size": [1114, 910] },
+    // { "filename": "slide_caravan_3_1.jpg", "size": [3516, 2880] },
+    { "filename": "slide_caravan_3_2.jpg", "size": [4104, 2880] },
+    { "filename": "slide_caravan_3_alan.jpg", "size": [2442, 2880] },
+    { "filename": "slide_caravan_3_calvin.jpg", "size": [1720, 2880] },
+    // { "filename": "slide_caravan_3_kern.jpg", "size": [1716, 2880] },
 ];
 
 function shuffleArray(array) {

@@ -68,6 +68,13 @@ const UPCOMING_SHOWS = [
         date: new Date("October 30, 2025 19:00"),
         price: 10,
     },
+    {
+        title: "",
+        bands: ["Looking For Adam", "Mary Jane Mafia"],
+        venue: "The Caravan Lounge, San Jose",
+        date: new Date("December 5, 2025 22:00"),
+        price: 0,
+    },
 ]
 
 const DAYS = [

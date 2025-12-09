@@ -13,6 +13,7 @@ function Profile({
     links=[],
     imageSide="left",
     hidden,
+    causeOfDeath,
 }) {
     const theme = useTheme();
     const isCompact = useMediaQuery(theme.breakpoints.down('sm'));
@@ -45,6 +46,7 @@ function Profile({
                     description={description}
                     links={links}
                     image={isCompact && image}
+                    causeOfDeath={causeOfDeath}
                 />
             </Box>
             {!isCompact && image && imageSide === "right" &&
