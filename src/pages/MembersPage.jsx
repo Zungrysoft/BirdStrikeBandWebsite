@@ -38,7 +38,7 @@ function MembersPage() {
             <Profile
                 name="Kern Kim"
                 instrument="Guitar"
-                description={``}
+                description={`After their guitarist Tom’s untimely death, Kern blew into the Bay Area on a damp wind from the far north, Seattle. With 15 years of shredding behind him, he brought the raw edge of his Pacific Northwest grunge roots into the band, pushing their sound with sharp, genre-bending riffs and melodies.`}
                 date="July 2025 - Current"
                 imageSide="left"
                 image="profile_kern"
