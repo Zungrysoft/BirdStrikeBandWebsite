@@ -75,6 +75,13 @@ const UPCOMING_SHOWS = [
         date: new Date("December 5, 2025 22:00"),
         price: 0,
     },
+    {
+        title: "",
+        bands: ["Grey Classic", "The Fatigues", "Cavespeak"],
+        venue: "The Vessel, Santa Cruz",
+        date: new Date("May 22, 2026 18:30"),
+        price: 10,
+    },
 ]
 
 const DAYS = [
@@ -148,7 +155,7 @@ function UpcomingShows({ displayPreviousShows=false }) {
     }, [displayPreviousShows])
 
     return shows.length === 0 ? 
-        <p style={{ color: LIGHTNING2 }}>No shows planned right now. Check back later!</p> :
+        <p style={{ color: LIGHTNING2 }}>No shows planned right now. Follow us on Instagram for show announcements!</p> :
         <TableContainer component={Paper} sx={{ backgroundColor: 'transparent', boxShadow: 'none' }}>
             <Table
                 sx={{

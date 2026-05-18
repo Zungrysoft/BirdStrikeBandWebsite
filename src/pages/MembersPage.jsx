@@ -75,22 +75,39 @@ function MembersPage() {
                 image="profile_alan"
             />
             <Profile
-                name="Abdul Hannan Kanji"
+                name='Gabe "Wubby" Peres'
                 instrument="Drums"
-                description={`In a band of hyper control freaks (Alan and Calvin) and flakey primadonas (Alex and Tom), it helps to have a reliable backbone who's always there and always friendly. Just a smiling face who's ready to play when you are. Can anyone come up with a single bad thing to say about Hannan? (Seriously, can you think of anything? It would be nice to have some dirt on him just in case.)`}
-                date="June 2024 - Current"
+                description={``}
+                date="February 2026 - Current"
                 imageSide="right"
-                image="profile_hannan"
+                image="profile_mystery"
             />
 
             <h4 style={{ marginBottom: '16px', marginTop: '96px', color: LIGHTNING2 }}>Past Members</h4>
-
+            
+            <Profile
+                name="Blake Hall"
+                instrument="Drums"
+                description={``}
+                date="March 2026"
+                imageSide="left"
+                image="profile_mystery"
+                hidden
+            />
+            <Profile
+                name="Abdul Hannan Kanji"
+                instrument="Drums"
+                description={`In a band of hyper control freaks (Alan and Calvin) and flakey primadonas (Alex and Tom), it helps to have a reliable backbone who's always there and always friendly. Just a smiling face who's ready to play when you are. Can anyone come up with a single bad thing to say about Hannan? (Seriously, can you think of anything? It would be nice to have some dirt on him just in case.)`}
+                date="June 2024 - December 2025"
+                imageSide="left"
+                image="profile_hannan"
+            />
             <Profile
                 name="Tom Cannon"
                 instrument="Guitar"
                 description={`With his skilled guitar shredding and 80's rock style, Tom "Thundergun" Cannon seemed destined for fame and glory in the Bay Area music scene. As a founding member of Bird Strike (formerly known as *bandName*), he brought to every practice session some dirty licks, some clean solos, and just a little bit of workout stank.\n\nTom's rise to fame was cut short by his tragic death in August of 2025. For the sake of the family's privacy, the band wishes not to go into much detail, but they will say that it involved *causeOfDeath*.`}
                 date="January 2024 - August 2025"
-                imageSide="left"
+                imageSide="right"
                 image="profile_tom"
                 causeOfDeath={causeOfDeath}
             />
