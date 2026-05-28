@@ -148,6 +148,10 @@ function UpcomingShows({ displayPreviousShows=false }) {
         const now = new Date();
         return UPCOMING_SHOWS
             .filter((show) => {
+                if (show.isHidden) {
+                    return false;
+                }
+
                 const isUpcoming = now.getTime() - show.date.getTime() < ESTIMATED_SHOW_LENGTH;
                 return displayPreviousShows ? !isUpcoming : isUpcoming;
             })
