@@ -1,88 +1,14 @@
 import { Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from '@mui/material';
 import React, { useMemo } from 'react';
 import { LIGHTNING2 } from '../config/colors';
+import shows from '../data/shows.json';
 
 const ESTIMATED_SHOW_LENGTH = 6 * 60 * 60 * 1000;
 
-const UPCOMING_SHOWS = [
-    {
-        title: "Live at The Sunnyvale War Machine",
-        bands: ["Rat Bastard Radio", "Nothing Over Silence"],
-        venue: "DM for address",
-        date: new Date("July 13, 2024 3:30"),
-        price: 0,
-    },
-    {
-        title: "",
-        bands: ["The Emergency Broadcast System", "The Hello Hellos"],
-        venue: "The Caravan Lounge, San Jose",
-        date: new Date("August 16, 2024 10:00"),
-        price: 0,
-    },
-    {
-        title: "Festi-Palooza",
-        bands: ["Nothing Over Silence", "The Emergency Broadcast System", "Monarchy of Roses", "Rest in Decay", "Devil Can't Cry", "Apricot Court", "Sharp.Cherub"],
-        venue: "Ken Wormhoudt Skate Park, Santa Cruz",
-        date: new Date("August 23, 2024 10:00"),
-        price: 0,
-    },
-    {
-        title: "",
-        bands: ["Sonus"],
-        venue: "The Caravan Lounge, San Jose",
-        date: new Date("February 28, 2025 10:00"),
-        price: 0,
-    },
-    {
-        title: "Vecino Lemonade Battle of the Bands",
-        bands: ["Antlion", "Mayday Mae", "For Kino", "Lover's Peak", "Düsol"],
-        venue: "Art Boutiki, San Jose",
-        date: new Date("May 02, 2025 19:30"),
-        price: 20,
-    },
-    {
-        title: "",
-        bands: ["The Scalps", "Eye of Aquila"],
-        venue: "The Jury Room, Santa Cruz",
-        date: new Date("June 27, 2025 21:00"),
-        price: 10,
-    },
-    {
-        title: "The Sunnyvale War Machine II",
-        bands: ["Chudson", "Sad Snack", "Rantch"],
-        venue: "DM for address",
-        date: new Date("July 19, 2025 19:00"),
-        price: 0,
-    },
-    {
-        title: "",
-        bands: ["Paperface", "Phantoms Forever", "Citrus Pit"],
-        venue: "Stay Gold Deli, Oakland",
-        date: new Date("July 26, 2025 18:00"),
-        price: 10,
-    },
-    {
-        title: "",
-        bands: ["Chudson", "Silk Road", "Kaefan"],
-        venue: "The Yard (DM for address)",
-        date: new Date("October 30, 2025 19:00"),
-        price: 10,
-    },
-    {
-        title: "",
-        bands: ["Looking For Adam", "Mary Jane Mafia"],
-        venue: "The Caravan Lounge, San Jose",
-        date: new Date("December 5, 2025 22:00"),
-        price: 0,
-    },
-    {
-        title: "",
-        bands: ["Grey Classic", "The Fatigues", "Cavespeak"],
-        venue: "The Vessel, Santa Cruz",
-        date: new Date("May 22, 2026 18:30"),
-        price: 10,
-    },
-]
+const UPCOMING_SHOWS = Object.values(shows).map((show) => ({
+    ...show,
+    date: new Date(show.date)
+}))
 
 const DAYS = [
     'Sunday',
@@ -94,7 +20,7 @@ const DAYS = [
     'Saturday',
 ]
 
-export function humanizeDate(dateObject) {
+export function humanizeDate(dateObject, includeDay = true, includeTime = true) {
     const pad = (n) => n.toString().padStart(2, '0');
 
     const year = dateObject.getFullYear();
@@ -105,11 +31,14 @@ export function humanizeDate(dateObject) {
     const minutes = dateObject.getMinutes() ? ':' + pad(dateObject.getMinutes()) : '';
     const day = DAYS[dateObject.getDay()];
 
-    let minutePrecision = `${day} ${month}/${date}/${year}`;
-    if (hours !== 0 && minutes !== 0 && ampm !== 'am') {
-        minutePrecision += ` at ${hours}${minutes}${ampm}`;
+    let dateStr = `${month}/${date}/${year}`;
+    if (includeDay) {
+        dateStr = `${day} ${dateStr}`;
     }
-    return minutePrecision;
+    if (hours !== 0 && minutes !== 0 && ampm !== 'am' && includeTime) {
+        dateStr += ` at ${hours}${minutes}${ampm}`;
+    }
+    return dateStr;
 }
 
 export function humanizePrice(price) {

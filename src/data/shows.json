@@ -1,0 +1,79 @@
+{
+    "war_machine": {
+        "title": "Live at The Sunnyvale War Machine",
+        "bands": ["Rat Bastard Radio", "Nothing Over Silence"],
+        "venue": "DM for address",
+        "date": "July 13, 2024 3:30",
+        "price": 0
+    },
+    "caravan": {
+        "title": "",
+        "bands": ["The Emergency Broadcast System", "The Hello Hellos"],
+        "venue": "The Caravan Lounge, San Jose",
+        "date": "August 16, 2024 10:00",
+        "price": 0
+    },
+    "skate_park": {
+        "title": "Festi-Palooza",
+        "bands": ["Nothing Over Silence", "The Emergency Broadcast System", "Monarchy of Roses", "Rest in Decay", "Devil Can't Cry", "Apricot Court", "Sharp.Cherub"],
+        "venue": "Ken Wormhoudt Skate Park, Santa Cruz",
+        "date": "August 23, 2024 10:00",
+        "price": 0
+    },
+    "caravan_2": {
+        "title": "",
+        "bands": ["Sonus"],
+        "venue": "The Caravan Lounge, San Jose",
+        "date": "February 28, 2025 10:00",
+        "price": 0
+    },
+    "botb": {
+        "title": "Vecino Lemonade Battle of the Bands",
+        "bands": ["Antlion", "Mayday Mae", "For Kino", "Lover's Peak", "Düsol"],
+        "venue": "Art Boutiki, San Jose",
+        "date": "May 02, 2025 19:30",
+        "price": 20
+    },
+    "jury_room": {
+        "title": "",
+        "bands": ["The Scalps", "Eye of Aquila"],
+        "venue": "The Jury Room, Santa Cruz",
+        "date": "June 27, 2025 21:00",
+        "price": 10
+    },
+    "war_machine_2": {
+        "title": "The Sunnyvale War Machine II",
+        "bands": ["Chudson", "Sad Snack", "Rantch"],
+        "venue": "DM for address",
+        "date": "July 19, 2025 19:00",
+        "price": 0
+    },
+    "stay_gold": {
+        "title": "",
+        "bands": ["Paperface", "Phantoms Forever", "Citrus Pit"],
+        "venue": "Stay Gold Deli, Oakland",
+        "date": "July 26, 2025 18:00",
+        "price": 10
+    },
+    "the_yard": {
+        "title": "",
+        "bands": ["Chudson", "Silk Road", "Kaefan"],
+        "venue": "The Yard (DM for address)",
+        "date": "October 30, 2025 19:00",
+        "price": 10
+    },
+    "caravan_3": {
+        "title": "",
+        "bands": ["Looking For Adam", "Mary Jane Mafia"],
+        "venue": "The Caravan Lounge, San Jose",
+        "date": "December 5, 2025 22:00",
+        "price": 0
+    },
+    "the_vessel": {
+        "title": "",
+        "bands": ["Grey Classic", "The Fatigues", "Cavespeak"],
+        "venue": "The Vessel, Santa Cruz",
+        "date": "May 22, 2026 18:30",
+        "price": 10
+    }
+}
