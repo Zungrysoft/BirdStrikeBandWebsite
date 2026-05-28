@@ -1,13 +1,18 @@
 import { Box, ImageList, ImageListItem, useMediaQuery, useTheme } from "@mui/material";
 import { useLayoutEffect, useState } from "react";
 
-const images = require.context('../../public/images', true);
+const images = require.context('../../public/images/compressed', true);
 
 const GALLERY_IMAGES = [
     { "filename": "slide_garage_1.jpg", "size": [4044, 3464] },
     { "filename": "slide_garage_tom.jpg", "size": [2610, 3702] },
+    { "filename": "slide_garage_alan.jpg", "size": [3484, 4284] },
+    { "filename": "slide_garage_calvin.jpg", "size": [5395, 4284] },
+    { "filename": "slide_garage_kern.jpg", "size": [4296, 4284] },
     { "filename": "slide_garage_alex.jpg", "size": [3024, 3894] },
+    { "filename": "slide_garage_alex_2.jpg", "size": [5424, 4046] },
     // { "filename": "slide_garage_hannan.jpg", "size": [2688, 3520] },
+    { "filename": "slide_studio_alex.jpg", "size": [2646, 3666] },
     { "filename": "slide_i_drink_your_milkshake.jpg", "size": [2232, 3550] },
     { "filename": "slide_gilman_1.jpg", "size": [609, 614] },
     { "filename": "slide_gilman_alex.jpg", "size": [754, 982] },
@@ -40,7 +45,11 @@ const GALLERY_IMAGES = [
     { "filename": "slide_caravan_3_2.jpg", "size": [4104, 2880] },
     { "filename": "slide_caravan_3_alan.jpg", "size": [2442, 2880] },
     { "filename": "slide_caravan_3_calvin.jpg", "size": [1720, 2880] },
-    // { "filename": "slide_caravan_3_kern.jpg", "size": [1716, 2880] },
+    { "filename": "slide_caravan_3_kern.jpg", "size": [1716, 2880] },
+    { "filename": "slide_vessel_1.jpg", "size": [1892, 2356] },
+    { "filename": "slide_vessel_2.jpg", "size": [1885, 1980] },
+    { "filename": "slide_vessel_3.jpg", "size": [1207, 1616] },
+    { "filename": "slide_vessel_4.jpg", "size": [1586, 2188] },
 ];
 
 function shuffleArray(array) {

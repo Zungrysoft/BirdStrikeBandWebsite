@@ -80,7 +80,7 @@ function MembersPage() {
                 description={``}
                 date="February 2026 - Current"
                 imageSide="right"
-                image="profile_mystery"
+                image="profile_gabe"
             />
 
             <h4 style={{ marginBottom: '16px', marginTop: '96px', color: LIGHTNING2 }}>Past Members</h4>

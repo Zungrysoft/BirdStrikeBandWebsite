@@ -1,4 +1,4 @@
-const images = require.context('../../public/images', true);
+const images = require.context('../../public/images/compressed', true);
 
 function ProfileImage({ image }) {
     return(
