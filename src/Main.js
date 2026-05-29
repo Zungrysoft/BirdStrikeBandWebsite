@@ -7,6 +7,7 @@ import MembersPage from './pages/MembersPage.jsx';
 import HeaderCompact from './components/HeaderCompact.jsx';
 import AboutPage from './pages/AboutPage.jsx';
 import GalleryPage from './pages/GalleryPage.jsx';
+import { Route, Routes } from 'react-router-dom';
 
 const images = require.context('../public/images', true);
 
@@ -14,11 +15,6 @@ function Main() {
     const theme = useTheme();
     const isCompact = useMediaQuery(theme.breakpoints.down('sm'));
     const isLarge = useMediaQuery(theme.breakpoints.up('xxl'));
-    const [selectedPage, setSelectedPage] = useState(0);
-
-    const handleTabChange = useCallback((_, value) => {
-        setSelectedPage(value)
-    }, [setSelectedPage]);
 
     return (
         <Stack direction="row" sx={{ height: '100vh', width: '100vw', overflowY: 'auto', overflowX: 'clip' }}>
@@ -27,12 +23,14 @@ function Main() {
             </Box>}
             <Box sx={{ width: '100%', flex: 1, minWidth: 0 }}>
                 {isCompact ?
-                    <HeaderCompact tab={selectedPage} onChangeTab={handleTabChange}/> :
-                    <Header tab={selectedPage} onChangeTab={handleTabChange}/>
+                    <HeaderCompact/> :
+                    <Header/>
                 }
-                {selectedPage === 0 && <AboutPage/>}
-                {selectedPage === 1 && <GalleryPage/>}
-                {selectedPage === 2 && <MembersPage/>}
+                <Routes>
+                    <Route path="/" element={<AboutPage />} />
+                    <Route path="/gallery" element={<GalleryPage />} />
+                    <Route path="/members" element={<MembersPage />} />
+                </Routes>
             </Box>
             {!isCompact && <Box sx={{ position: 'sticky', top: 0, height: '100vh', flex: 0 }}>
                 <img src={images(isLarge ? "./posterslice2big.jpg" : "./posterslice2.jpg")} style={{ height: '100vh' }}/>
