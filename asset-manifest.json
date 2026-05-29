@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.322f6f84.css",
-    "main.js": "/static/js/main.c81b2723.js",
+    "main.js": "/static/js/main.c837ce33.js",
     "static/js/453.b5234d1c.chunk.js": "/static/js/453.b5234d1c.chunk.js",
     "static/media/profile_calvin.jpg-autosave.kra": "/static/media/profile_calvin.jpg-autosave.2af494448ea6aa63640f.kra",
     "static/media/slide_garage_1.jpg": "/static/media/slide_garage_1.87f20d5c6247891eed00.jpg",
@@ -44,6 +44,7 @@
     "static/media/slide_vessel_4.jpg": "/static/media/slide_vessel_4.54776de7f50f29479779.jpg",
     "static/media/slide_war_machine_2_1.jpg": "/static/media/slide_war_machine_2_1.d9aa0d1001cf087ea78c.jpg",
     "static/media/slide_war_machine_2_worship.jpg": "/static/media/slide_war_machine_2_worship.4bcbf5e649c68ed18b91.jpg",
+    "static/media/logo.png-autosave.kra": "/static/media/logo.png-autosave.caf1101f3e277fdb68a4.kra",
     "static/media/slide_vessel_3.jpg~": "/static/media/slide_vessel_3.559d354468a3707626eb.jpg~",
     "static/media/posterslice1.jpg": "/static/media/posterslice1.06705aebb815c43cbf55.jpg",
     "static/media/slide_caravan_3_alan.jpg": "/static/media/slide_caravan_3_alan.3e4d00f1fdcc3fa555bb.jpg",
@@ -56,6 +57,7 @@
     "static/media/slide_caravan_3_calvin.jpg": "/static/media/slide_caravan_3_calvin.89eb8f3988e437d52d96.jpg",
     "static/media/slide_vessel_3.jpg": "/static/media/slide_vessel_3.e5ea3f73c5856d255b68.jpg",
     "static/media/slide_caravan_3_kern.jpg": "/static/media/slide_caravan_3_kern.f77393b243b437d809fb.jpg",
+    "static/media/logo_small.png": "/static/media/logo_small.698bbe789899276c6bd6.png",
     "static/media/slide_botb_1.jpg": "/static/media/slide_botb_1.4340f7b58633bbe41628.jpg",
     "static/media/main_page_cropped.jpg": "/static/media/main_page_cropped.b03acd496a504b194310.jpg",
     "static/media/slide_skate_2.jpg": "/static/media/slide_skate_2.22fa2c45d6dd7a6b665b.jpg",
@@ -77,11 +79,11 @@
     "static/media/apple_music.svg": "/static/media/apple_music.244afe3dcde974ef5a470cbebd997ba1.svg",
     "index.html": "/index.html",
     "main.322f6f84.css.map": "/static/css/main.322f6f84.css.map",
-    "main.c81b2723.js.map": "/static/js/main.c81b2723.js.map",
+    "main.c837ce33.js.map": "/static/js/main.c837ce33.js.map",
     "453.b5234d1c.chunk.js.map": "/static/js/453.b5234d1c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.322f6f84.css",
-    "static/js/main.c81b2723.js"
+    "static/js/main.c837ce33.js"
   ]
 }
