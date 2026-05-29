@@ -118,7 +118,7 @@ function UpcomingShows({ displayPreviousShows=false }) {
                                 <UpcomingShowTitle title={row.title} bands={row.bands} />
                             </TableCell>
                             <TableCell align="center">{row.venue}</TableCell>
-                            <TableCell align="center">{row.dateIsTbd ? 'TBD' : humanizeDate(row.date)}</TableCell>
+                            <TableCell align="center">{row.dateIsTbd ? 'TBD' : humanizeDate(row.date, true, !displayPreviousShows)}</TableCell>
                             <TableCell align="center">{humanizePrice(row.price)}</TableCell>
                         </TableRow>
                     ))}

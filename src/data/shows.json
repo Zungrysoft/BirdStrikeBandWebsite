@@ -75,5 +75,12 @@
         "venue": "The Vessel, Santa Cruz",
         "date": "May 22, 2026 18:30",
         "price": 10
+    },
+    "vessel_festival": {
+        "title": "Vessel Festival",
+        "bands": ["Mandate of Heaven", "Angoris", "ROSEWOOD", "Living in Silence", "Guthook"],
+        "venue": "The Vessel, Santa Cruz",
+        "date": "June 13, 2026",
+        "price": "TBD"
     }
 }
