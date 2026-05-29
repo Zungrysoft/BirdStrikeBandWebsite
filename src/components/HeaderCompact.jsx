@@ -16,7 +16,7 @@ function HeaderCompact() {
     return(
         <Stack direction="column" justifyContent="center" alignItems="center" sx={{ padding: 2 }}>
             <Stack direction="row" justifyContent="center">
-                <img src={images("./logo.png")} style={{
+                <img src={images("./logo_small.png")} style={{
                     height: '100%',
                     maxHeight: '200px',
                     maxWidth: '100%',
