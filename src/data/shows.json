@@ -81,6 +81,13 @@
         "bands": ["Mandate of Heaven", "Angoris", "ROSEWOOD", "Living in Silence", "Guthook"],
         "venue": "The Vessel, Santa Cruz",
         "date": "June 13, 2026 18:00",
-        "price": "TBD"
+        "price": 10
+    },
+    "war_machine_3": {
+        "title": "The Sunnyvale War Machine III",
+        "bands": ["Chudson", "Grey Classic", "TBA"],
+        "venue": "DM for address",
+        "date": "June 20, 2026 18:30",
+        "price": 0
     }
 }
