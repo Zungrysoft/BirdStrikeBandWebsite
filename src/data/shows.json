@@ -1,4 +1,12 @@
 {
+    "gilman_open_mic": {
+        "title": "",
+        "bands": [],
+        "venue": "924 Gilman St.",
+        "date": "June 2, 2024",
+        "price": 0,
+        "isHidden": true
+    },
     "war_machine": {
         "title": "Live at The Sunnyvale War Machine",
         "bands": ["Rat Bastard Radio", "Nothing Over Silence"],
