@@ -72,6 +72,23 @@ function UpcomingShowTitle({ title, bands=[] }) {
     return "";
 }
 
+function UpcomingShowVenue({ venue, dmForAddress=false }) {
+    if (venue) {
+        if (dmForAddress) {
+            return <>
+                {venue} <i>{"(DM for address)"}</i>
+            </>;
+        }
+        return venue;
+    }
+
+    if (dmForAddress) {
+        return "DM for address";
+    }
+
+    return "-";
+}
+
 function UpcomingShows({ displayPreviousShows=false }) {
     const shows = useMemo(() => {
         const now = new Date();
@@ -117,7 +134,9 @@ function UpcomingShows({ displayPreviousShows=false }) {
                             <TableCell align="center" component="th" scope="row">
                                 <UpcomingShowTitle title={row.title} bands={row.bands} />
                             </TableCell>
-                            <TableCell align="center">{row.venue}</TableCell>
+                            <TableCell align="center">
+                                <UpcomingShowVenue venue={row.venue} dmForAddress={row.dmForAddress && !displayPreviousShows} />
+                            </TableCell>
                             <TableCell align="center">{row.dateIsTbd ? 'TBD' : humanizeDate(row.date, true, !displayPreviousShows)}</TableCell>
                             <TableCell align="center">{humanizePrice(row.price)}</TableCell>
                         </TableRow>

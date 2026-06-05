@@ -14,6 +14,7 @@ const GALLERY_IMAGES = [
     { "filename": "slide_garage_alex.jpg", "size": [3024, 3894], "title": "Alex in the practice garage" },
     { "filename": "slide_garage_alex_2.jpg", "size": [5424, 4046], "title": "Alex in the practice garage" },
     { "filename": "slide_garage_gabe.jpg", "size": [2880, 4132], "title": "Gabe in the practice garage" },
+    { "filename": "slide_garage_gabe_2.jpg", "size": [2520, 3510], "title": "Gabe in the practice garage" },
     // { "filename": "slide_garage_hannan.jpg", "size": [2688, 3520], "title": "In the practice garage" },
     { "filename": "slide_studio_alex.jpg", "size": [2646, 3666], "title": "Alex recording vocals for Sludge Supper" },
     { "filename": "slide_i_drink_your_milkshake.jpg", "size": [2232, 3550], "title": "DRAINAGE ALAN, YOU BOY!" },
