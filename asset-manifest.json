@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.322f6f84.css",
-    "main.js": "/static/js/main.5c3afe1f.js",
+    "main.js": "/static/js/main.3576b9d6.js",
     "static/js/453.b5234d1c.chunk.js": "/static/js/453.b5234d1c.chunk.js",
     "static/media/profile_calvin.jpg-autosave.kra": "/static/media/profile_calvin.jpg-autosave.2af494448ea6aa63640f.kra",
     "static/media/slide_garage_1.jpg": "/static/media/slide_garage_1.87f20d5c6247891eed00.jpg",
@@ -15,6 +15,7 @@
     "static/media/slide_garage_kern.jpg": "/static/media/slide_garage_kern.afb0036c209632da37d9.jpg",
     "static/media/slide_blood_on_the_bass.jpg": "/static/media/slide_blood_on_the_bass.12ca328569ede2ec514f.jpg",
     "static/media/profile_alan.jpg": "/static/media/profile_alan.5bed0aec71aa2a7cccec.jpg",
+    "static/media/slide_garage_gabe_2.jpg": "/static/media/slide_garage_gabe_2.4ef30b172867177500fa.jpg",
     "static/media/slide_garage_hannan.jpg": "/static/media/slide_garage_hannan.5a81395ecdc001001d5f.jpg",
     "static/media/slide_i_drink_your_milkshake.jpg": "/static/media/slide_i_drink_your_milkshake.f260df10f1d3b0bcd4c3.jpg",
     "static/media/slide_botb_2.jpg": "/static/media/slide_botb_2.89b7c09b72b3afb4704b.jpg",
@@ -81,11 +82,11 @@
     "static/media/apple_music.svg": "/static/media/apple_music.244afe3dcde974ef5a470cbebd997ba1.svg",
     "index.html": "/index.html",
     "main.322f6f84.css.map": "/static/css/main.322f6f84.css.map",
-    "main.5c3afe1f.js.map": "/static/js/main.5c3afe1f.js.map",
+    "main.3576b9d6.js.map": "/static/js/main.3576b9d6.js.map",
     "453.b5234d1c.chunk.js.map": "/static/js/453.b5234d1c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.322f6f84.css",
-    "static/js/main.5c3afe1f.js"
+    "static/js/main.3576b9d6.js"
   ]
 }
