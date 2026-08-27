@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.322f6f84.css",
-    "main.js": "/static/js/main.26f279d8.js",
+    "main.js": "/static/js/main.b1060d6e.js",
     "static/js/453.b5234d1c.chunk.js": "/static/js/453.b5234d1c.chunk.js",
     "static/media/profile_calvin.jpg-autosave.kra": "/static/media/profile_calvin.jpg-autosave.2af494448ea6aa63640f.kra",
     "static/media/slide_garage_1.jpg": "/static/media/slide_garage_1.87f20d5c6247891eed00.jpg",
@@ -27,6 +27,7 @@
     "static/media/profile_alex_old.jpg": "/static/media/profile_alex_old.f105fb5d32e25b4e3c42.jpg",
     "static/media/slide_garage_gabe.jpg": "/static/media/slide_garage_gabe.c2fb9ba2938c87c4b606.jpg",
     "static/media/profile_hannan.jpg": "/static/media/profile_hannan.7eb148c7da9e2489df01.jpg",
+    "static/media/album_screw_loose.jpg": "/static/media/album_screw_loose.c11d6087989ece106c08.jpg",
     "static/media/slide_caravan_3_2.jpg": "/static/media/slide_caravan_3_2.64172b86f84ff9b85575.jpg",
     "static/media/slide_war_machine_calvin.jpg": "/static/media/slide_war_machine_calvin.320604dd601b94c93a74.jpg",
     "static/media/slide_garage_tom.jpg": "/static/media/slide_garage_tom.9ca2f5bbe7199a8976ae.jpg",
@@ -48,6 +49,7 @@
     "static/media/slide_vessel_1.jpg": "/static/media/slide_vessel_1.c18b8a4af038abeef0f2.jpg",
     "static/media/slide_botb_3.jpg": "/static/media/slide_botb_3.dba5f960caf37cf1cea2.jpg",
     "static/media/slide_caravan_3_1.jpg": "/static/media/slide_caravan_3_1.5559e0ac63d64ab34af1.jpg",
+    "static/media/album_plague_doctor.jpg": "/static/media/album_plague_doctor.01015590761f3144a4e2.jpg",
     "static/media/profile_kern.jpg~": "/static/media/profile_kern.dd30b71696dca91de73e.jpg~",
     "static/media/slide_vessel_2.jpg": "/static/media/slide_vessel_2.30a61d3064bf3509b6cb.jpg",
     "static/media/slide_war_machine_2_mosh_pit.jpg": "/static/media/slide_war_machine_2_mosh_pit.7b6f36d6241523bfe5f9.jpg",
@@ -88,15 +90,23 @@
     "static/media/logo.jpg": "/static/media/logo.670422d07c34bbc8fddd.jpg",
     "static/media/logo_small.jpg": "/static/media/logo_small.9b01dfca9a8b6a0d12f7.jpg",
     "static/media/compress_images.py": "/static/media/compress_images.7b9e376159f5364267e4.py",
+    "static/media/screw_loose_lyrics.txt": "/static/media/screw_loose_lyrics.bd15a911db5896b9e6e1.txt",
+    "static/media/plague_doctor_lyrics.txt": "/static/media/plague_doctor_lyrics.7d43656e86f8c280b5c4.txt",
     "static/media/spotify.svg": "/static/media/spotify.35c3d68981d22b2981162f52978bef8a.svg",
     "static/media/apple_music.svg": "/static/media/apple_music.244afe3dcde974ef5a470cbebd997ba1.svg",
     "index.html": "/index.html",
+    "static/media/crash_and_burn_screw_loose_description.txt": "/static/media/crash_and_burn_screw_loose_description.c0a3803bce09299e01b9.txt",
+    "static/media/crash_and_burn_rat_vs_roach_description.txt": "/static/media/crash_and_burn_rat_vs_roach_description.9a62ef3bdf0773d4e5e7.txt",
+    "static/media/crash_and_burn_plague_doctor_description.txt": "/static/media/crash_and_burn_plague_doctor_description.baada2531ce7a8f6802b.txt",
+    "static/media/crash_and_burn_sludge_supper_description.txt": "/static/media/crash_and_burn_sludge_supper_description.aecdf6419d552500543b.txt",
+    "static/media/plague_doctor_description.txt": "/static/media/plague_doctor_description.4c317f1af47c915267bd.txt",
+    "static/media/screw_loose_description.txt": "/static/media/screw_loose_description.7359c32fa815aa9293d0.txt",
     "main.322f6f84.css.map": "/static/css/main.322f6f84.css.map",
-    "main.26f279d8.js.map": "/static/js/main.26f279d8.js.map",
+    "main.b1060d6e.js.map": "/static/js/main.b1060d6e.js.map",
     "453.b5234d1c.chunk.js.map": "/static/js/453.b5234d1c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.322f6f84.css",
-    "static/js/main.26f279d8.js"
+    "static/js/main.b1060d6e.js"
   ]
 }
