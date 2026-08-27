@@ -36,25 +36,16 @@ function MembersPage() {
                 ]}
             />
             <Profile
-                name="Kern Kim"
-                instrument="Guitar"
-                description={``}
-                date="July 2025 - Current"
-                imageSide="left"
-                image="profile_kern"
-            />
-            {/* <Profile 
-                name="Kern Kim"
-                instrument="Guitar"
-                description={`After their previous guitarist Tom's untimely death, the band performed an ancient Portugese ritual passed down by Calvin and Alex's grandmother to transplant his soul and guitar-playing ability into another man's body. The band chose Kern as the victim shell in order to raise the band's average attractiveness and get a head start on their plan to transition into a K-Pop group so gradually that no one would notice. Half way through the ritual which took the form of a 9-part prog metal opera, Tom (in Kern's body) leapt up from the ceremonial cot, grabbed his guitar, and began shredding!\n\nThe band found out later that the ritual didn't actually work; Kern had in fact been playing guitar for over 13 years. But he seemed like a nice enough guy so the band let him stay. Though they remind him that if he slips up once too many, they can always do the ritual again (and get it right this time.)`}
-                date="July 2025 - Current"
+                name="????"
+                instrument="Guitar, Vocals"
+                description={`Bird Strike has a new member...`}
+                date="August 2026 - Current"
                 imageSide="left"
                 image="profile_mystery"
-                hidden
-            />*/}
+            />
             <Profile
                 name="Calvin Martinez"
-                instrument="Keyboard, Harmonica, Ocarina, Accordion, Vibraslap, Backing Vocals"
+                instrument="Keyboard, Harmonica, Ocarina, Accordion"
                 description={`Bird Strike originally formed when Calvin hosted a seminar to rope suckers into his cryptocurrency scheme. But when only two people showed up, both musicians, he abandoned the idea and turned it into a jam session instead. And it's a good thing too because buying audio equipment for Bird Strike allows them to hemorrhage money just a little bit slower than if they had invested in crypto.\n\nCalvin has been perfecting his overdriven Hammond Organ tone to create a screaming beastly rival to the power of the lead guitar. In fact, he specializes in the lesser-used instruments that no one else plays or really likes. But the rest of the band has to put up with it because he pays for the practice garage. He suffers no fools, asks no quarter, and arrives to no practice session sober; for he is a founding member of Bird Strike first, last, and always.`}
                 date="January 2024 - Current"
                 imageSide="right"
@@ -95,11 +86,19 @@ function MembersPage() {
                 hidden
             />
             <Profile
+                name="Kern Kim"
+                instrument="Guitar"
+                description={``}
+                date="July 2025 - June 2026"
+                imageSide="left"
+                image="profile_kern"
+            />
+            <Profile
                 name="Abdul Hannan Kanji"
                 instrument="Drums"
                 description={`In a band of hyper control freaks (Alan and Calvin) and flakey primadonas (Alex and Tom), it helps to have a reliable backbone who's always there and always friendly. Just a smiling face who's ready to play when you are. Can anyone come up with a single bad thing to say about Hannan? (Seriously, can you think of anything? It would be nice to have some dirt on him just in case.)`}
                 date="June 2024 - December 2025"
-                imageSide="left"
+                imageSide="right"
                 image="profile_hannan"
             />
             <Profile
@@ -107,7 +106,7 @@ function MembersPage() {
                 instrument="Guitar"
                 description={`With his skilled guitar shredding and 80's rock style, Tom "Thundergun" Cannon seemed destined for fame and glory in the Bay Area music scene. As a founding member of Bird Strike (formerly known as *bandName*), he brought to every practice session some dirty licks, some clean solos, and just a little bit of workout stank.\n\nTom's rise to fame was cut short by his tragic death in August of 2025. For the sake of the family's privacy, the band wishes not to go into much detail, but they will say that it involved *causeOfDeath*.`}
                 date="January 2024 - August 2025"
-                imageSide="right"
+                imageSide="left"
                 image="profile_tom"
                 causeOfDeath={causeOfDeath}
             />

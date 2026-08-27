@@ -106,7 +106,7 @@
     },
     "war_machine_3": {
         "title": "The Sunnyvale War Machine III",
-        "bands": ["Chudson", "Grey Classic", "TBA"],
+        "bands": ["Chudson", "Grey Classic"],
         "venue": "The Sunnyvale War Machine",
         "dmForAddress": true,
         "date": "June 20, 2026 18:30",

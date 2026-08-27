@@ -370,6 +370,20 @@ const GALLERY_IMAGES_RAW = [
         "tags": [],
         "weight": 100,
     },
+    {
+        "filename": "slide_war_machine_3_1.jpg",
+        "size": [1108, 868],
+        "show": "war_machine_3",
+        "tags": [],
+        "weight": 100,
+    },
+    {
+        "filename": "slide_war_machine_3_2.jpg",
+        "size": [1171, 996],
+        "show": "war_machine_3",
+        "tags": [],
+        "weight": 100,
+    },
 ];
 
 const MAX_WIDTH = 700;
