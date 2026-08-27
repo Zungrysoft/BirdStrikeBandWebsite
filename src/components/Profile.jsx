@@ -34,7 +34,7 @@ function Profile({
         }}>
             {!isCompact && image && imageSide === "left" &&
                 <Box sx={{ flex: 0.7, minWidth: 0, maxWidth: '100%' }}>
-                    <ProfileImage image={image}/>
+                    <ProfileImage image={image} aspectRatio={'1.43:1'}/>
                 </Box>
             }
             <Box sx={{ flex: 1, minWidth: 0, display: 'flex', flexDirection: 'column', justifyContent: 'start' }}>

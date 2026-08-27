@@ -1,0 +1,60 @@
+[
+    {
+        "title": "Crash and Burn",
+        "type": "EP",
+        "tracks": [
+            {
+                "title": "Rat vs. Roach: The Ultimate Showdown",
+                "description": "crash_and_burn_rat_vs_roach_description"
+            },
+            {
+                "title": "Plague Doctor",
+                "lyrics": "plague_doctor_lyrics",
+                "description": "crash_and_burn_plague_doctor_description",
+                "link": {
+                    "text": "Music Video",
+                    "link": ""
+                }
+            },
+            {
+                "title": "Sludge Supper",
+                "description": "crash_and_burn_sludge_supper_description"
+            },
+            {
+                "title": "Screw Loose",
+                "description": "crash_and_burn_screw_loose_description"
+            }
+        ],
+        "albumArt": "album_plague_doctor",
+        "date": "November 2, 2026",
+        "isHidden": true
+    },
+    {
+        "title": "Screw Loose",
+        "type": "Single",
+        "tracks": [
+            {
+                "title": "Screw Loose",
+                "lyrics": "screw_loose_lyrics",
+                "description": "screw_loose_description"
+            }
+        ],
+        "albumArt": "album_screw_loose",
+        "date": "May 3, 2025",
+        "isHidden": false
+    },
+    {
+        "title": "Plague Doctor",
+        "type": "Single",
+        "tracks": [
+            {
+                "title": "Plague Doctor",
+                "lyrics": "plague_doctor_lyrics",
+                "description": "plague_doctor_description"
+            }
+        ],
+        "albumArt": "album_plague_doctor",
+        "date": "March 12, 2025",
+        "isHidden": false
+    }
+]

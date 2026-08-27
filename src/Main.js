@@ -7,6 +7,7 @@ import MembersPage from './pages/MembersPage.jsx';
 import HeaderCompact from './components/HeaderCompact.jsx';
 import AboutPage from './pages/AboutPage.jsx';
 import GalleryPage from './pages/GalleryPage.jsx';
+import DiscographyPage from './pages/DiscographyPage.jsx';
 import { Route, Routes } from 'react-router-dom';
 
 const images = require.context('../public/images', true);
@@ -19,7 +20,7 @@ function Main() {
     return (
         <Stack direction="row" sx={{ height: '100vh', width: '100vw', overflowY: 'auto', overflowX: 'clip' }}>
             {!isCompact && <Box sx={{ position: 'sticky', top: 0, height: '100vh', flex: 0 }}>
-                <img src={images(isLarge ? "./posterslice1big.jpg" : "./posterslice1.jpg")} style={{ height: '100vh' }}/>
+                <img src={images(isLarge ? "./posterslice1big.jpg" : "./posterslice1.jpg")} style={{ height: '100vh', aspectRatio: isLarge ? '1365 : 4685' : '800 : 4685' }}/>
             </Box>}
             <Box sx={{ width: '100%', flex: 1, minWidth: 0 }}>
                 {isCompact ?
@@ -30,6 +31,7 @@ function Main() {
                     <Route path="/" element={<AboutPage />} />
                     <Route path="/gallery" element={<GalleryPage />} />
                     <Route path="/members" element={<MembersPage />} />
+                    <Route path="/discography" element={<DiscographyPage />} />
                 </Routes>
             </Box>
             {!isCompact && <Box sx={{ position: 'sticky', top: 0, height: '100vh', flex: 0 }}>

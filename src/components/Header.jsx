@@ -23,6 +23,7 @@ function Header() {
                 <Box>
                     <img src={images("./logo_small.png")} style={{
                         height: '100%',
+                        aspectRatio: '1256 : 400',
                         maxHeight: '200px',
                         maxWidth: '100%',
                         display: 'block',
@@ -46,6 +47,13 @@ function Header() {
                         value="/"
                         component={Link}
                         to="/"
+                    />
+
+                    <Tab
+                        label="Music"
+                        value="/discography"
+                        component={Link}
+                        to="/discography"
                     />
 
                     <Tab

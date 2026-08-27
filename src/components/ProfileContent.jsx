@@ -22,7 +22,7 @@ function ProfileContent({
                 <h4 style={{ color: LIGHTNING }}>{name}</h4>
                 <h6 style={{ color: LIGHTNING2 }}>{instrument}</h6>
             </Box>
-            {image && <ProfileImage image={image}/>}
+            {image && <ProfileImage image={image} aspectRatio={'1.43:1'}/>}
             <Box sx={{ flex: 0, padding: 2 }}>
                 <p style={{ color: LIGHTNING2 }}>{processedDescription}</p>
             </Box>

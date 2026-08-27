@@ -32,9 +32,9 @@ function GalleryPage() {
         const width = containerRef.current.getBoundingClientRect().width;
         
         let numCols = 5;
-        if (isCompact) numCols = 2;
-        if (isModeratelyCompact) numCols = 3;
         if (isSomewhatCompact) numCols = 4;
+        if (isModeratelyCompact) numCols = 3;
+        if (isCompact) numCols = 2;
 
         const columnWidth = Math.floor((width - ((numCols - 1) * GALLERY_SPACING_PX)) / numCols);
 
