@@ -66,12 +66,12 @@ function MembersPage() {
                 image="profile_alan"
             />
             <Profile
-                name='Gabe "Wubby" Peres'
+                name='"Wubby"'
                 instrument="Drums"
                 description={``}
                 date="February 2026 - Current"
                 imageSide="right"
-                image="profile_gabe"
+                image="profile_wubby"
             />
 
             <h4 style={{ marginBottom: '16px', marginTop: '96px', color: LIGHTNING2 }}>Past Members</h4>
