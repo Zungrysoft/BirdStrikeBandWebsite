@@ -111,5 +111,13 @@
         "dmForAddress": true,
         "date": "June 20, 2026 18:30",
         "price": 0
+    },
+    "open_fire_beach_show": {
+        "title": "Open Fire Beach Show",
+        "bands": ["Disturbia", "Thelves", "Rantch"],
+        "venue": "Santa Cruz",
+        "dmForAddress": true,
+        "date": "September 20, 2026 17:00",
+        "price": 10
     }
 }
