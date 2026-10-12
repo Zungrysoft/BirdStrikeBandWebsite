@@ -24,7 +24,7 @@ function MembersPage() {
             <Profile
                 name="Alex Martinez"
                 instrument="Lead Vocals"
-                description={`Parkour instructor by day, rock vocalist by night, Alex's massive stage presence saved Bird Strike in its hour of need. Without Alex, the band would just be four nerds. Four poor wretches struggling to make it as single childless software engineers.\n\nIn the days before Alex joined, the band was creating its vocal tracks by cutting together audio snippets of Joe Rogan interviews. Tired of having to do this, Calvin hired his brother Alex to cut together the Joe Rogan snippets for them. But then he came up with a better way.`}
+                description={`Parkour instructor by day, rock vocalist by night, Alex's massive stage presence saved Bird Strike in its hour of need. Without Alex, the band would just be four nerds. Four poor wretches struggling to survive as single childless software engineers.\n\nIn the days before Alex joined, the band was creating its vocal tracks by cutting together audio snippets of Joe Rogan interviews. Tired of having to do this, Calvin hired his brother Alex to cut together the Joe Rogan snippets for them. But then he came up with a better way.`}
                 date="May 2024 - Current"
                 imageSide="right"
                 image="profile_alex"
@@ -36,12 +36,12 @@ function MembersPage() {
                 ]}
             />
             <Profile
-                name="????"
-                instrument="Guitar, Vocals"
-                description={`Bird Strike has a new member...`}
+                name="Jason Halabi"
+                instrument="Guitar"
+                description={``}
                 date="August 2026 - Current"
                 imageSide="left"
-                image="profile_mystery"
+                image="profile_jason"
             />
             <Profile
                 name="Calvin Martinez"

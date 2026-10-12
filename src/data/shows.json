@@ -119,5 +119,30 @@
         "dmForAddress": true,
         "date": "September 20, 2026 17:00",
         "price": 10
+    },
+    "rocky_horror": {
+        "title": "Rocky Horror Punk Show",
+        "bands": ["Silk Road", "Kiori", "Mugslug", "The Emergency Broadcast System"],
+        "venue": "1628 Fulton, San Francisco",
+        "dmForAddress": false,
+        "date": "October 9, 2026 19:00",
+        "price": 15
+    },
+    "wizard_show": {
+        "title": "Shadow Money Wizard Duel",
+        "bands": ["Warlords for Hire", "Angoris", "Synth Wizard"],
+        "venue": "San Jose",
+        "dmForAddress": true,
+        "date": "October 17, 2026 18:00",
+        "price": 0
+    },
+    "return_to_the_nest": {
+        "title": "Return to the Nest",
+        "bands": ["Chudson", "TBD"],
+        "venue": "The Sunnyvale War Machine",
+        "dmForAddress": true,
+        "date": "October 23, 2026 18:00",
+        "dateIsTbd": true,
+        "price": 0
     }
 }

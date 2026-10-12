@@ -384,6 +384,48 @@ const GALLERY_IMAGES_RAW = [
         "tags": [],
         "weight": 100,
     },
+    {
+        "filename": "slide_open_fire_beach_show_1.jpg",
+        "size": [720, 886],
+        "show": "open_fire_beach_show",
+        "tags": [],
+        "weight": 100,
+    },
+    {
+        "filename": "slide_rocky_horror_1.jpg",
+        "size": [4518, 2870],
+        "show": "rocky_horror",
+        "tags": [],
+        "weight": 100,
+    },
+    {
+        "filename": "slide_rocky_horror_2.jpg",
+        "size": [3102, 3744],
+        "show": "rocky_horror",
+        "tags": [],
+        "weight": 100,
+    },
+    {
+        "filename": "slide_rocky_horror_3.jpg",
+        "size": [3091, 2421],
+        "show": "rocky_horror",
+        "tags": [],
+        "weight": 100,
+    },
+    {
+        "filename": "slide_rocky_horror_4.jpg",
+        "size": [3044, 2455],
+        "show": "rocky_horror",
+        "tags": [],
+        "weight": 100,
+    },
+    {
+        "filename": "slide_rocky_horror_5.jpg",
+        "size": [2795, 2859],
+        "show": "rocky_horror",
+        "tags": [],
+        "weight": 100,
+    },
 ];
 
 const MAX_WIDTH = 700;
