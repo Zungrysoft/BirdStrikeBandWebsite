@@ -23,9 +23,9 @@ export function getTomBandName() {
 }
 
 export function getCauseOfDeath() {
-    const party = pickFromListRandom(causeOfDeathData.parties);
-    const thing1 = pickFromListRandom(causeOfDeathData.things1);
-    const thing2 = pickFromListRandom(causeOfDeathData.things2);
+    const party = pickFromListRandom(causeOfDeathData.killer);
+    const thing1 = pickFromListRandom(causeOfDeathData.weapon);
+    const thing2 = pickFromListRandom(causeOfDeathData.object);
 
     return `${party}, ${thing1}, and ${thing2}`
 }

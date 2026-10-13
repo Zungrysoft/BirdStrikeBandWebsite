@@ -1,5 +1,5 @@
 {
-    "parties": [
+    "killer": [
         "one of his gym buddies",
         "Eddie Van-Halen's ghost",
         "Donald Trump Jr.",
@@ -7,18 +7,18 @@
         "his twin brother Wyatt",
         "a rabid chipmunk",
         "a pitbull",
-        "another local band (you know which one)",
         "Ghislaine Maxwell",
         "the governor of Wyoming",
         "a colony of army ants",
         "RCA records",
         "the Taliban",
         "the Saudi Crown Prince",
-        "Vecino Lemonade",
+        "the Openfire Collective",
         "the Sinoloa Cartel",
-        "The MPAA"
+        "The MPAA",
+        "another local band (you know which one)"
     ],
-    "things1": [
+    "weapon": [
         "a bicycle wheel",
         "a thumbtack",
         "a double-necked guitar",
@@ -31,7 +31,7 @@
         "a plague doctor mask",
         "a giant leech",
         "asbestos",
-        "a 2x4",
+        "a 2-by-4",
         "an industrial lathe",
         "a looper pedal",
         "a bottle of absinthe",
@@ -41,29 +41,33 @@
         "a Hattori Hanzo Sword",
         "a rusty nail",
         "2-part epoxy",
-        "a 1960's refrigerator",
-        "a purple-colored sharpie",
+        "a very old refrigerator",
+        "a purple sharpie",
         "a four-function calculator",
         "a flannel jacket",
         "a roll of scotch tape",
+        "a blunt object",
         "lead paint",
+        "a grease-soaked rag",
         "a frisbee",
+        "a pack of cigarettes",
+        "a granite quarry",
         "a denim jacket",
         "a lifting belt"
     ],
-    "things2": [
+    "object": [
         "a McDonalds gift card with 34 cents on it",
         "a baggie of MSG",
         "a large jug of creatine",
         "a wet T-shirt contest",
+        "a Judas Priest T-Shirt",
         "a lock of Amy Adams' hair",
         "a 1968 Chevrolet Corvette",
-        "a blunt object",
         "a game of crazy-eights",
+        "a chocolate-covered frozen banana",
         "his own semen",
         "The Ark of the Covenant",
         "Calvin's world famous guacamole",
-        "three slices of provolone cheese",
-        "a grease-soaked rag"
+        "three slices of provolone cheese"
     ]
 }
