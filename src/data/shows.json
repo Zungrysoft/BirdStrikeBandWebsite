@@ -137,12 +137,11 @@
         "price": 0
     },
     "return_to_the_nest": {
-        "title": "Return to the Nest",
-        "bands": ["Chudson", "TBD"],
+        "title": "Return of the Nest",
+        "bands": ["Chudson", "Rantch", "The Emergency Broadcast System"],
         "venue": "The Sunnyvale War Machine",
         "dmForAddress": true,
-        "date": "October 23, 2026 18:00",
-        "dateIsTbd": true,
+        "date": "October 25, 2026 17:30",
         "price": 0
     }
 }
