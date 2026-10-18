@@ -426,6 +426,13 @@ const GALLERY_IMAGES_RAW = [
         "tags": [],
         "weight": 100,
     },
+    {
+        "filename": "slide_wizard_1.jpg",
+        "size": [1088, 1333],
+        "show": "wizard_show",
+        "tags": [],
+        "weight": 100,
+    },
 ];
 
 const MAX_WIDTH = 700;

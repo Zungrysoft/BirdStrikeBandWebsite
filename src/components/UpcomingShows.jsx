@@ -122,7 +122,7 @@ function UpcomingShows({ displayPreviousShows=false }) {
                         <TableCell align="center">Show</TableCell>
                         <TableCell align="center">Venue</TableCell>
                         <TableCell align="center">Date & Time</TableCell>
-                        <TableCell align="center">Price</TableCell>
+                        {!displayPreviousShows && <TableCell align="center">Price</TableCell>}
                     </TableRow>
                 </TableHead>
                 <TableBody>
@@ -138,7 +138,7 @@ function UpcomingShows({ displayPreviousShows=false }) {
                                 <UpcomingShowVenue venue={row.venue} dmForAddress={row.dmForAddress && !displayPreviousShows} />
                             </TableCell>
                             <TableCell align="center">{row.dateIsTbd ? 'TBD' : humanizeDate(row.date, true, !displayPreviousShows)}</TableCell>
-                            <TableCell align="center">{humanizePrice(row.price)}</TableCell>
+                            {!displayPreviousShows && <TableCell align="center">{humanizePrice(row.price)}</TableCell>}
                         </TableRow>
                     ))}
                 </TableBody>

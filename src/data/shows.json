@@ -129,7 +129,7 @@
         "price": 15
     },
     "wizard_show": {
-        "title": "Shadow Money Wizard Duel",
+        "title": "Shadow Wizard Money Duel",
         "bands": ["Warlords for Hire", "Angoris", "Synth Wizard"],
         "venue": "San Jose",
         "dmForAddress": true,
