@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.322f6f84.css",
-    "main.js": "/static/js/main.f159fec8.js",
+    "main.js": "/static/js/main.71087c52.js",
     "static/js/453.b5234d1c.chunk.js": "/static/js/453.b5234d1c.chunk.js",
     "static/media/profile_calvin.jpg-autosave.kra": "/static/media/profile_calvin.jpg-autosave.2af494448ea6aa63640f.kra",
     "static/media/slide_rocky_horror_1.jpg": "/static/media/slide_rocky_horror_1.f7eba36bdbb6e4e39ecf.jpg",
@@ -81,6 +81,7 @@
     "static/media/slide_skate_2.jpg": "/static/media/slide_skate_2.22fa2c45d6dd7a6b665b.jpg",
     "static/media/slide_war_machine_2_sermon.jpg": "/static/media/slide_war_machine_2_sermon.659d7639196fc60ae505.jpg",
     "static/media/slide_war_machine_2_sermon.jpg~": "/static/media/slide_war_machine_2_sermon.4a5cefd9bf373294aef9.jpg~",
+    "static/media/slide_wizard_1.jpg": "/static/media/slide_wizard_1.f21ddbf213ff5e27f874.jpg",
     "static/media/slide_jury_room_1.jpg": "/static/media/slide_jury_room_1.02a3f956251d8f9eddbe.jpg",
     "static/media/slide_gilman_alex.jpg": "/static/media/slide_gilman_alex.5d385aa3e7dd2f83b475.jpg",
     "static/media/slide_war_machine_3_1.jpg": "/static/media/slide_war_machine_3_1.0f191c5bb7c2d2139fc7.jpg",
@@ -109,11 +110,11 @@
     "static/media/plague_doctor_description.txt": "/static/media/plague_doctor_description.4c317f1af47c915267bd.txt",
     "static/media/screw_loose_description.txt": "/static/media/screw_loose_description.7359c32fa815aa9293d0.txt",
     "main.322f6f84.css.map": "/static/css/main.322f6f84.css.map",
-    "main.f159fec8.js.map": "/static/js/main.f159fec8.js.map",
+    "main.71087c52.js.map": "/static/js/main.71087c52.js.map",
     "453.b5234d1c.chunk.js.map": "/static/js/453.b5234d1c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.322f6f84.css",
-    "static/js/main.f159fec8.js"
+    "static/js/main.71087c52.js"
   ]
 }
