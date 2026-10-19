@@ -3,6 +3,28 @@ import { Box, Collapse, useMediaQuery, useTheme } from "@mui/material";
 import { BACKGROUND_1, LIGHTNING, LIGHTNING2 } from "../config/colors";
 import ProfileImage from "./ProfileImage";
 
+function observeElement(element, update) {
+    let frame = null;
+    const runUpdate = () => {
+        frame = null;
+        update(element);
+    };
+    runUpdate();
+    const observer = new ResizeObserver(() => {
+        if (frame != null) {
+            return;
+        }
+        frame = requestAnimationFrame(runUpdate);
+    });
+    observer.observe(element);
+    return () => {
+        observer.disconnect();
+        if (frame != null) {
+            cancelAnimationFrame(frame);
+        }
+    };
+}
+
 function ReleaseContent({
     title,
     type,
@@ -29,11 +51,10 @@ function ReleaseContent({
             setCompactArtHeight(null);
             return undefined;
         }
-        const updateHeight = () => setCompactArtHeight(el.getBoundingClientRect().height);
-        updateHeight();
-        const observer = new ResizeObserver(updateHeight);
-        observer.observe(el);
-        return () => observer.disconnect();
+        return observeElement(el, (element) => {
+            const height = Math.round(element.getBoundingClientRect().height);
+            setCompactArtHeight((prev) => (prev === height ? prev : height));
+        });
     }, [albumArt]);
 
     useLayoutEffect(() => {
@@ -42,11 +63,10 @@ function ReleaseContent({
             setOverflows(false);
             return undefined;
         }
-        const updateOverflow = () => setOverflows(el.scrollHeight > el.clientHeight + 1);
-        updateOverflow();
-        const observer = new ResizeObserver(updateOverflow);
-        observer.observe(el);
-        return () => observer.disconnect();
+        return observeElement(el, (element) => {
+            const next = element.scrollHeight > element.clientHeight + 1;
+            setOverflows((prev) => (prev === next ? prev : next));
+        });
     }, [isSingle, expanded, singleTrack, compactArtHeight, isCompact]);
 
     return(
@@ -54,7 +74,7 @@ function ReleaseContent({
             <Box sx={{ flex: 0, padding: 2, paddingBottom: 1, flexDirection: 'column', textAlign: 'left' }}>
                 <h4 style={{ color: LIGHTNING, textAlign: 'left', marginTop: -8 }}>{title}</h4>
                 {albumArt &&
-                    <Box ref={compactArtRef}>
+                    <Box ref={compactArtRef} sx={isCompact ? { marginTop: 2, marginBottom: 2 } : undefined}>
                         <ProfileImage image={albumArt} aspectRatio={'1:1'}/>
                     </Box>
                 }
@@ -198,6 +218,8 @@ function ReleaseTrackDetails({
     lyrics,
     description,
 }) {
+    const theme = useTheme();
+    const isCompact = useMediaQuery(theme.breakpoints.down('sm'));
     const textStyle = {
         color: LIGHTNING2,
         paddingTop: 4,
@@ -212,11 +234,26 @@ function ReleaseTrackDetails({
     }
 
     return (
-        <Box sx={{ display: 'flex', flexDirection: 'row', gap: 1, alignItems: 'stretch', paddingBottom: 2 }}>
+        <Box sx={{
+            display: 'flex',
+            flexDirection: isCompact ? 'column' : 'row',
+            gap: 1,
+            alignItems: 'stretch',
+            paddingBottom: 2,
+        }}>
             <Box sx={{ flex: 1, minWidth: 0 }}>
                 <p style={{...textStyle, fontStyle: lyrics ? null : 'italic'}}>{lyrics ?? 'This track has no lyrics'}</p>
             </Box>
-            <Box sx={{ width: '1px', backgroundColor: LIGHTNING2, flexShrink: 0 }}/>
+            <Box sx={isCompact ? {
+                height: '1px',
+                width: '100%',
+                backgroundColor: LIGHTNING2,
+                flexShrink: 0,
+            } : {
+                width: '1px',
+                backgroundColor: LIGHTNING2,
+                flexShrink: 0,
+            }}/>
             <Box sx={{ flex: 1, minWidth: 0 }}>
                 <p style={textStyle}>{description}</p>
             </Box>
