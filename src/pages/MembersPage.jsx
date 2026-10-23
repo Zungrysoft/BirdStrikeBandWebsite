@@ -37,7 +37,7 @@ function MembersPage() {
             />
             <Profile
                 name="Jason Halabi"
-                instrument="Guitar"
+                instrument="Guitar, Vocals"
                 description={``}
                 date="August 2026 - Current"
                 imageSide="left"
@@ -45,7 +45,7 @@ function MembersPage() {
             />
             <Profile
                 name="Calvin Martinez"
-                instrument="Keyboard, Harmonica, Ocarina, Accordion"
+                instrument="Keyboard, Harmonica, Ocarina, Accordion, Vocals"
                 description={`Bird Strike originally formed when Calvin hosted a seminar to rope suckers into his cryptocurrency scheme. But when only two people showed up, both musicians, he abandoned the idea and turned it into a jam session instead. And it's a good thing too because buying audio equipment for Bird Strike allows them to hemorrhage money just a little bit slower than if they had invested in crypto.\n\nCalvin has been perfecting his overdriven Hammond Organ tone to create a screaming beastly rival to the power of the lead guitar. In fact, he specializes in the lesser-used instruments that no one else plays or really likes. But the rest of the band has to put up with it because he pays for the practice garage. He suffers no fools, asks no quarter, and arrives to no practice session sober; for he is a founding member of Bird Strike first, last, and always.`}
                 date="January 2024 - Current"
                 imageSide="right"

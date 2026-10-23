@@ -1,0 +1,457 @@
+[
+    {
+        "filename": "slide_garage_1.jpg",
+        "size": [4044, 3464],
+        "show": "war_machine",
+        "tags": [],
+        "weight": 100
+    },
+    {
+        "filename": "slide_garage_tom.jpg",
+        "size": [2610, 3702],
+        "title": "Tom in the practice garage",
+        "tags": [],
+        "weight": 100
+    },
+    {
+        "filename": "slide_garage_alan.jpg",
+        "size": [3484, 4284],
+        "title": "Alan in the practice garage",
+        "tags": [],
+        "weight": 100
+    },
+    {
+        "filename": "slide_garage_calvin.jpg",
+        "size": [5395, 4284],
+        "title": "Calvin in the practice garage",
+        "tags": [],
+        "weight": 100
+    },
+    {
+        "filename": "slide_garage_kern.jpg",
+        "size": [4296, 4284],
+        "title": "Kern in the practice garage",
+        "tags": [],
+        "weight": 100
+    },
+    {
+        "filename": "slide_garage_alex.jpg",
+        "size": [3024, 3894],
+        "title": "Alex in the practice garage",
+        "tags": [],
+        "weight": 100
+    },
+    {
+        "filename": "slide_garage_alex_2.jpg",
+        "size": [5424, 4046],
+        "title": "Alex in the practice garage",
+        "tags": [],
+        "weight": 100
+    },
+    {
+        "filename": "slide_garage_wubby.jpg",
+        "size": [2880, 4132],
+        "title": "Wubby in the practice garage",
+        "tags": [],
+        "weight": 100
+    },
+    {
+        "filename": "slide_garage_wubby_2.jpg",
+        "size": [2520, 3510],
+        "title": "Wubby in the practice garage",
+        "tags": [],
+        "weight": 100
+    },
+    {
+        "filename": "slide_studio_alex.jpg",
+        "size": [2646, 3666],
+        "title": "Alex recording vocals for Sludge Supper",
+        "tags": [],
+        "weight": 100
+    },
+    {
+        "filename": "slide_i_drink_your_milkshake.jpg",
+        "size": [2232, 3550],
+        "title": "DRAINAGE ALAN, YOU BOY!",
+        "tags": [],
+        "weight": 5
+    },
+    {
+        "filename": "slide_merch1.jpg",
+        "size": [1068, 1338],
+        "title": "Bird Strike's Coveted Merch",
+        "tags": [],
+        "weight": 130
+    },
+    {
+        "filename": "slide_merch2.jpg",
+        "size": [716, 994],
+        "title": "Bird Strike's Coveted Merch",
+        "tags": [],
+        "weight": 130
+    },
+    {
+        "filename": "slide_gilman_1.jpg",
+        "size": [609, 614],
+        "show": "gilman_open_mic",
+        "tags": [],
+        "weight": 100
+    },
+    {
+        "filename": "slide_gilman_alex.jpg",
+        "size": [754, 982],
+        "show": "gilman_open_mic" ,
+        "tags": [],
+        "weight": 100
+    },
+    {
+        "filename": "slide_war_machine_tom.jpg",
+        "size": [3803, 2771],
+        "show": "war_machine",
+        "tags": [],
+        "weight": 100
+    },
+    {
+        "filename": "slide_war_machine_calvin.jpg",
+        "size": [4031, 3023],
+        "show": "war_machine",
+        "tags": [],
+        "weight": 100
+    },
+    {
+        "filename": "slide_war_machine_alex.jpg",
+        "size": [2695, 2410],
+        "show": "war_machine",
+        "tags": [],
+        "weight": 100
+    },
+    {
+        "filename": "slide_war_machine_group.jpg",
+        "size": [3828, 3024],
+        "show": "war_machine",
+        "tags": [],
+        "weight": 100
+    },
+    {
+        "filename": "slide_skate_1.jpg",
+        "size": [3188, 2368],
+        "show": "skate_park",
+        "tags": [],
+        "weight": 100
+    },
+    {
+        "filename": "slide_skate_2.jpg",
+        "size": [1258, 1376],
+        "show": "skate_park",
+        "tags": [],
+        "weight": 100
+    },
+    {
+        "filename": "slide_caravan_1.jpg",
+        "size": [942, 605],
+        "show": "caravan",
+        "tags": [],
+        "weight": 100
+    },
+    {
+        "filename": "slide_caravan_2.jpg",
+        "size": [2896, 2532],
+        "show": "caravan",
+        "tags": [],
+        "weight": 100
+    },
+    {
+        "filename": "slide_botb_1.jpg",
+        "size": [1159, 1080],
+        "show": "botb",
+        "tags": [],
+        "weight": 100
+    },
+    {
+        "filename": "slide_botb_2.jpg",
+        "size": [3162, 3526],
+        "show": "botb",
+        "tags": [],
+        "weight": 100
+    },
+    {
+        "filename": "slide_botb_3.jpg",
+        "size": [2436, 3214],
+        "show": "botb",
+        "tags": [],
+        "weight": 100
+    },
+    {
+        "filename": "slide_botb_alan.jpg",
+        "size": [689, 1017],
+        "show": "botb",
+        "tags": [],
+        "weight": 100
+    },
+    {
+        "filename": "slide_botb_calvin.jpg",
+        "size": [738, 907],
+        "show": "botb",
+        "tags": [],
+        "weight": 100
+    },
+    {
+        "filename": "slide_botb_tom.jpg",
+        "size": [660, 769],
+        "show": "botb",
+        "tags": [],
+        "weight": 100
+    },
+    {
+        "filename": "slide_blood_on_the_bass.jpg",
+        "size": [3000, 4000],
+        "show": "botb",
+        "tags": [],
+        "weight": 100
+    },
+    {
+        "filename": "slide_jury_room_1.jpg",
+        "size": [776, 1040],
+        "show": "jury_room",
+        "tags": [],
+        "weight": 100
+    },
+    {
+        "filename": "slide_war_machine_2_1.jpg",
+        "size": [1964, 1223],
+        "show": "war_machine_2",
+        "tags": [],
+        "weight": 100
+    },
+    {
+        "filename": "slide_war_machine_2_2.jpg",
+        "size": [1463, 1488],
+        "show": "war_machine_2",
+        "tags": [],
+        "weight": 100
+    },
+    {
+        "filename": "slide_war_machine_2_alan.jpg",
+        "size": [1406, 1496],
+        "show": "war_machine_2",
+        "tags": [],
+        "weight": 100
+    },
+    {
+        "filename": "slide_war_machine_2_alex.jpg",
+        "size": [1424, 1832],
+        "show": "war_machine_2",
+        "tags": [],
+        "weight": 100
+    },
+    {
+        "filename": "slide_war_machine_2_hannan.jpg",
+        "size": [1463, 2048],
+        "show": "war_machine_2",
+        "tags": [],
+        "weight": 100
+    },
+    {
+        "filename": "slide_war_machine_2_mosh_pit.jpg",
+        "size": [1463, 1901],
+        "show": "war_machine_2",
+        "tags": [],
+        "weight": 100
+    },
+    {
+        "filename": "slide_war_machine_2_worship.jpg",
+        "size": [1883, 1280],
+        "show": "war_machine_2",
+        "tags": [],
+        "weight": 100
+    },
+    {
+        "filename": "slide_war_machine_2_sermon.jpg",
+        "size": [1256, 690],
+        "show": "war_machine_2",
+        "tags": [],
+        "weight": 100
+    },
+    {
+        "filename": "slide_yard_1.jpg",
+        "size": [1114, 910],
+        "show": "the_yard",
+        "tags": [],
+        "weight": 100
+    },
+    {
+        "filename": "slide_caravan_3_1.jpg",
+        "size": [3516, 2880],
+        "show": "caravan_3",
+        "tags": [],
+        "weight": 0
+    },
+    {
+        "filename": "slide_caravan_3_2.jpg",
+        "size": [4104, 2880],
+        "show": "caravan_3",
+        "tags": [],
+        "weight": 100
+    },
+    {
+        "filename": "slide_caravan_3_alan.jpg",
+        "size": [2442, 2880],
+        "show": "caravan_3",
+        "tags": [],
+        "weight": 100
+    },
+    {
+        "filename": "slide_caravan_3_calvin.jpg",
+        "size": [1720, 2880],
+        "show": "caravan_3",
+        "tags": [],
+        "weight": 100
+    },
+    {
+        "filename": "slide_caravan_3_kern.jpg",
+        "size": [1716, 2880],
+        "show": "caravan_3",
+        "tags": [],
+        "weight": 100
+    },
+    {
+        "filename": "slide_vessel_1.jpg",
+        "size": [1892, 2356],
+        "show": "the_vessel",
+        "tags": [],
+        "weight": 100
+    },
+    {
+        "filename": "slide_vessel_2.jpg",
+        "size": [1885, 1980],
+        "show": "the_vessel",
+        "tags": [],
+        "weight": 100
+    },
+    {
+        "filename": "slide_vessel_3.jpg",
+        "size": [1207, 1616],
+        "show": "the_vessel",
+        "tags": [],
+        "weight": 100
+    },
+    {
+        "filename": "slide_vessel_4.jpg",
+        "size": [1586, 2188],
+        "show": "the_vessel",
+        "tags": [],
+        "weight": 100
+    },
+    {
+        "filename": "slide_vessel_wubby.jpg",
+        "size": [1185, 1728],
+        "show": "the_vessel",
+        "tags": [],
+        "weight": 100
+    },
+    {
+        "filename": "slide_vessel2_1.jpg",
+        "size": [3208, 5027],
+        "show": "vessel_festival",
+        "tags": [],
+        "weight": 100
+    },
+    {
+        "filename": "slide_vessel2_2.jpg",
+        "size": [2552, 3504],
+        "show": "vessel_festival",
+        "tags": [],
+        "weight": 100
+    },
+    {
+        "filename": "slide_vessel2_3.jpg",
+        "size": [2274, 3724],
+        "show": "vessel_festival",
+        "tags": [],
+        "weight": 100
+    },
+    {
+        "filename": "slide_vessel2_4.jpg",
+        "size": [2430, 3832],
+        "show": "vessel_festival",
+        "tags": [],
+        "weight": 100
+    },
+    {
+        "filename": "slide_vessel2_5.jpg",
+        "size": [3640, 6000],
+        "show": "vessel_festival",
+        "tags": [],
+        "weight": 100
+    },
+    {
+        "filename": "slide_vessel2_6.jpg",
+        "size": [3510, 3706],
+        "show": "vessel_festival",
+        "tags": [],
+        "weight": 100
+    },
+    {
+        "filename": "slide_war_machine_3_1.jpg",
+        "size": [1108, 868],
+        "show": "war_machine_3",
+        "tags": [],
+        "weight": 100
+    },
+    {
+        "filename": "slide_war_machine_3_2.jpg",
+        "size": [1171, 996],
+        "show": "war_machine_3",
+        "tags": [],
+        "weight": 100
+    },
+    {
+        "filename": "slide_open_fire_beach_show_1.jpg",
+        "size": [720, 886],
+        "show": "open_fire_beach_show",
+        "tags": [],
+        "weight": 100
+    },
+    {
+        "filename": "slide_rocky_horror_1.jpg",
+        "size": [4518, 2870],
+        "show": "rocky_horror",
+        "tags": [],
+        "weight": 100
+    },
+    {
+        "filename": "slide_rocky_horror_2.jpg",
+        "size": [3102, 3744],
+        "show": "rocky_horror",
+        "tags": [],
+        "weight": 100
+    },
+    {
+        "filename": "slide_rocky_horror_3.jpg",
+        "size": [3091, 2421],
+        "show": "rocky_horror",
+        "tags": [],
+        "weight": 100
+    },
+    {
+        "filename": "slide_rocky_horror_4.jpg",
+        "size": [3044, 2455],
+        "show": "rocky_horror",
+        "tags": [],
+        "weight": 100
+    },
+    {
+        "filename": "slide_rocky_horror_5.jpg",
+        "size": [2795, 2859],
+        "show": "rocky_horror",
+        "tags": [],
+        "weight": 100
+    },
+    {
+        "filename": "slide_wizard_1.jpg",
+        "size": [1088, 1333],
+        "show": "wizard_show",
+        "tags": [],
+        "weight": 100
+    }
+]

@@ -1,4 +1,3 @@
-
 import bandNames from '../data/bandNames.json';
 import causeOfDeathData from '../data/causesOfDeath.json';
 
