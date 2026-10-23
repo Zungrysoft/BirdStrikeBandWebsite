@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.322f6f84.css",
-    "main.js": "/static/js/main.1a0e7e0b.js",
+    "main.js": "/static/js/main.89eb91ce.js",
     "static/js/453.b5234d1c.chunk.js": "/static/js/453.b5234d1c.chunk.js",
     "static/media/profile_calvin.jpg-autosave.kra": "/static/media/profile_calvin.jpg-autosave.2af494448ea6aa63640f.kra",
     "static/media/slide_rocky_horror_1.jpg": "/static/media/slide_rocky_horror_1.f7eba36bdbb6e4e39ecf.jpg",
@@ -68,6 +68,7 @@
     "static/media/profile_kern.jpg": "/static/media/profile_kern.7395f045e9077cf4eee4.jpg",
     "static/media/slide_war_machine_2_alex.jpg": "/static/media/slide_war_machine_2_alex.732506fa7fe861b2ac68.jpg",
     "static/media/slide_war_machine_2_2.jpg": "/static/media/slide_war_machine_2_2.d16efa20ca8b07230ae1.jpg",
+    "static/media/merch.jpg": "/static/media/merch.7b312d2fc57449ab010a.jpg",
     "static/media/profile_wubby.jpg": "/static/media/profile_wubby.020f06245eabeffd6b27.jpg",
     "static/media/slide_war_machine_2_alan.jpg": "/static/media/slide_war_machine_2_alan.63ba6d261bca51a49df8.jpg",
     "static/media/main_page.jpg": "/static/media/main_page.71fccec9c7af24e9e59d.jpg",
@@ -78,7 +79,9 @@
     "static/media/slide_war_machine_3_2.jpg": "/static/media/slide_war_machine_3_2.d2b0a02336a5360c631d.jpg",
     "static/media/slide_botb_1.jpg": "/static/media/slide_botb_1.4340f7b58633bbe41628.jpg",
     "static/media/main_page_cropped.jpg": "/static/media/main_page_cropped.b03acd496a504b194310.jpg",
+    "static/media/slide_merch1.jpg": "/static/media/slide_merch1.ee3401af89822e062a5e.jpg",
     "static/media/slide_skate_2.jpg": "/static/media/slide_skate_2.22fa2c45d6dd7a6b665b.jpg",
+    "static/media/slide_vessel_wubby.jpg": "/static/media/slide_vessel_wubby.3f3f1399d5541e8bdafe.jpg",
     "static/media/slide_war_machine_2_sermon.jpg": "/static/media/slide_war_machine_2_sermon.659d7639196fc60ae505.jpg",
     "static/media/slide_war_machine_2_sermon.jpg~": "/static/media/slide_war_machine_2_sermon.4a5cefd9bf373294aef9.jpg~",
     "static/media/slide_wizard_1.jpg": "/static/media/slide_wizard_1.f21ddbf213ff5e27f874.jpg",
@@ -87,6 +90,7 @@
     "static/media/slide_war_machine_3_1.jpg": "/static/media/slide_war_machine_3_1.0f191c5bb7c2d2139fc7.jpg",
     "static/media/slide_yard_1.jpg": "/static/media/slide_yard_1.f5c22486bb00a9ecb6b0.jpg",
     "static/media/slide_yard_1.jpg~": "/static/media/slide_yard_1.3600c4c7e0df725971e8.jpg~",
+    "static/media/slide_merch2.jpg": "/static/media/slide_merch2.3d9d0edf471b2e1da949.jpg",
     "static/media/slide_botb_alan.jpg": "/static/media/slide_botb_alan.41ec33a6bc979ee8764f.jpg",
     "static/media/profile_mystery.jpg": "/static/media/profile_mystery.a65845adcbd74d23de52.jpg",
     "static/media/slide_caravan_1.jpg": "/static/media/slide_caravan_1.4688771ae9598b8d66cd.jpg",
@@ -110,11 +114,11 @@
     "static/media/plague_doctor_description.txt": "/static/media/plague_doctor_description.4c317f1af47c915267bd.txt",
     "static/media/screw_loose_description.txt": "/static/media/screw_loose_description.7359c32fa815aa9293d0.txt",
     "main.322f6f84.css.map": "/static/css/main.322f6f84.css.map",
-    "main.1a0e7e0b.js.map": "/static/js/main.1a0e7e0b.js.map",
+    "main.89eb91ce.js.map": "/static/js/main.89eb91ce.js.map",
     "453.b5234d1c.chunk.js.map": "/static/js/453.b5234d1c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.322f6f84.css",
-    "static/js/main.1a0e7e0b.js"
+    "static/js/main.89eb91ce.js"
   ]
 }
